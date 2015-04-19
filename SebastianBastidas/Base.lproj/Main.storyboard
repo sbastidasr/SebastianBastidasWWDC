@@ -42,15 +42,16 @@
                             <outletCollection property="gestureRecognizers" destination="bCZ-MC-xeW" appends="YES" id="E1e-Of-SRp"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="Z1a-zc-skN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="bCZ-MC-xeW">
                     <connections>
-                        <segue destination="27K-jF-ekG" kind="show" id="kPu-Dr-WVg"/>
+                        <segue destination="izB-WC-eTJ" kind="show" id="oAi-qA-aIg"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="850.5" y="-216"/>
+            <point key="canvasLocation" x="652.5" y="-211"/>
         </scene>
         <!--Piano View Controller-->
         <scene sceneID="yes-xx-R8T">
@@ -269,56 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OP2-ji-t85" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1848" y="-168"/>
-        </scene>
-        <!--Swipe View Controller-->
-        <scene sceneID="GuP-5R-Gkd">
-            <objects>
-                <viewController id="bE9-uJ-8gh" customClass="SwipeViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="PqN-Sl-Dpj"/>
-                        <viewControllerLayoutGuide type="bottom" id="qw4-al-il4"/>
-                    </layoutGuides>
-                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="03K-DW-08t">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UH1-NU-VXh">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="209" width="374" height="250"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="7lw-js-VYy" kind="embed" id="Igi-yc-SSV"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="UH1-NU-VXh"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="UH1-NU-VXh"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <navigationItem key="navigationItem" id="V9a-Ba-ZNp"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="lblStatus" destination="0b8-8g-THE" id="2Oi-wX-Ar4"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tMA-Na-Fyi" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="b2J-6v-HAP">
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="Olx-Om-7Vz"/>
-                    </connections>
-                </swipeGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="83.25" y="-187.5"/>
+            <point key="canvasLocation" x="2166" y="-156"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jwL-03-d7R">
@@ -331,7 +283,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="bE9-uJ-8gh" kind="relationship" relationship="rootViewController" id="X57-yl-wNH"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yYT-Ol-P5k"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfp-WB-Qpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -355,39 +307,126 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0b8-8g-THE">
-                                <rect key="frame" x="0.0" y="207" width="600" height="300"/>
-                                <color key="backgroundColor" red="0.042626407470000002" green="1" blue="0.085788087789999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ePU-Gn-APX"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ePU-Gn-APX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaY-yy-y6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466.5" y="483"/>
+        </scene>
+        <!--Swipe View Controller-->
+        <scene sceneID="K1Y-AN-Gib">
+            <objects>
+                <viewController id="izB-WC-eTJ" customClass="SwipeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YwL-PV-fMa"/>
+                        <viewControllerLayoutGuide type="bottom" id="4uA-CB-kIP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nCa-V9-dNT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3D-P5-mgW">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="179" y="237" width="52" height="21"/>
+                                </variation>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2U-yu-KQc">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="123" width="375" height="250"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="Jmh-f2-oQJ" kind="embed" id="OQF-dv-ZfR"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="W3D-P5-mgW"/>
+                                <exclude reference="C2U-yu-KQc"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="W3D-P5-mgW"/>
+                                <include reference="C2U-yu-KQc"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="xR1-th-wBk" appends="YES" id="5yW-FY-7Kl"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="wKE-xO-IbS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I68-Cc-BdY" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="xR1-th-wBk">
+                    <connections>
+                        <segue destination="27K-jF-ekG" kind="show" id="Ehb-uw-q2H"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1377" y="-205"/>
+        </scene>
+        <!--Draw View Controller-->
+        <scene sceneID="PMY-pn-ylW">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Jmh-f2-oQJ" customClass="DrawViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VXN-ie-nZV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dl8-LT-Hk3"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="z0T-Rj-gdc">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Start drawing" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4q8-DL-fQl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                 </variation>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.050980396568775177" green="0.14117647707462311" blue="0.9647059440612793" alpha="1" colorSpace="deviceRGB"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="ePU-Gn-APX"/>
-                                <exclude reference="0b8-8g-THE"/>
+                                <exclude reference="4q8-DL-fQl"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="ePU-Gn-APX"/>
-                                <include reference="0b8-8g-THE"/>
+                                <include reference="4q8-DL-fQl"/>
                             </mask>
                         </variation>
                     </view>
                     <toolbarItems/>
                     <connections>
-                        <outlet property="lblStatus" destination="0b8-8g-THE" id="PjO-7N-Js5"/>
+                        <outlet property="lblStatus" destination="4q8-DL-fQl" id="kmc-df-l6x"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BaY-yy-y6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aUn-qQ-XcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="64.5" y="433"/>
+            <point key="canvasLocation" x="1377" y="538"/>
         </scene>
     </scenes>
     <resources>

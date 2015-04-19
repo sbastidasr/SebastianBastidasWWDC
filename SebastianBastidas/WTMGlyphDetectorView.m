@@ -166,7 +166,7 @@
   if (!self.enableDrawing)
     return;
   
-  [[UIColor whiteColor] setStroke];
+  [[UIColor blackColor] setStroke];
   [self.myPath strokeWithBlendMode:kCGBlendModeNormal alpha:0.5];
 }
 
