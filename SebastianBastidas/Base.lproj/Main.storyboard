@@ -50,7 +50,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1122" y="-211"/>
+            <point key="canvasLocation" x="850.5" y="-216"/>
         </scene>
         <!--Piano View Controller-->
         <scene sceneID="yes-xx-R8T">
@@ -276,54 +276,53 @@
             <objects>
                 <viewController id="bE9-uJ-8gh" customClass="SwipeViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xUQ-MU-iP9"/>
-                        <viewControllerLayoutGuide type="bottom" id="rAG-Bf-yA4"/>
+                        <viewControllerLayoutGuide type="top" id="PqN-Sl-Dpj"/>
+                        <viewControllerLayoutGuide type="bottom" id="qw4-al-il4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CGy-8C-qJl">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="03K-DW-08t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBV-3H-twj">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UH1-NU-VXh">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="179" y="237" width="42" height="21"/>
+                                    <rect key="frame" x="0.0" y="209" width="374" height="250"/>
                                 </variation>
-                            </label>
+                                <connections>
+                                    <segue destination="7lw-js-VYy" kind="embed" id="Igi-yc-SSV"/>
+                                </connections>
+                            </containerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <gestureRecognizers/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="IBV-3H-twj"/>
+                                <exclude reference="UH1-NU-VXh"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="IBV-3H-twj"/>
+                                <include reference="UH1-NU-VXh"/>
                             </mask>
                         </variation>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="VUA-Gc-Bo3" appends="YES" id="qcB-CG-pRD"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="V9a-Ba-ZNp"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="lblStatus" destination="0b8-8g-THE" id="2Oi-wX-Ar4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMA-Na-Fyi" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="VUA-Gc-Bo3">
+                <swipeGestureRecognizer direction="left" id="b2J-6v-HAP">
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="8T5-pG-tXc"/>
+                        <segue destination="BYZ-38-t0r" kind="show" id="Olx-Om-7Vz"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="303" y="-211"/>
+            <point key="canvasLocation" x="83.25" y="-187.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jwL-03-d7R">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cfp-WB-Qpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Wa-0q-bhL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="b8s-b5-oEC">
@@ -335,12 +334,65 @@
                         <segue destination="bE9-uJ-8gh" kind="relationship" relationship="rootViewController" id="X57-yl-wNH"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cfp-WB-Qpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-615" y="-211"/>
+        </scene>
+        <!--Draw View Controller-->
+        <scene sceneID="rwS-g0-XDt">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="7lw-js-VYy" customClass="DrawViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xpX-XU-k9p"/>
+                        <viewControllerLayoutGuide type="bottom" id="nIq-yl-TLe"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="x3e-d4-a26">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone 40.png" translatesAutoresizingMaskIntoConstraints="NO" id="ePU-Gn-APX">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0b8-8g-THE">
+                                <rect key="frame" x="0.0" y="207" width="600" height="300"/>
+                                <color key="backgroundColor" red="0.042626407470000002" green="1" blue="0.085788087789999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ePU-Gn-APX"/>
+                                <exclude reference="0b8-8g-THE"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ePU-Gn-APX"/>
+                                <include reference="0b8-8g-THE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="lblStatus" destination="0b8-8g-THE" id="PjO-7N-Js5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaY-yy-y6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.5" y="433"/>
         </scene>
     </scenes>
     <resources>
         <image name="black.jpg" width="40" height="140"/>
+        <image name="iPhone 40.png" width="750" height="500"/>
         <image name="white.jpg" width="60" height="230"/>
     </resources>
 </document>
