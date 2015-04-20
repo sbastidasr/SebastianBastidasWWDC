@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA0F49421AE540660020B086 /* PocketSVG.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0F49411AE540660020B086 /* PocketSVG.m */; };
+		EA0F494F1AE54ACF0020B086 /* ruby.svg in Resources */ = {isa = PBXBuildFile; fileRef = EA0F494E1AE54ACF0020B086 /* ruby.svg */; };
 		EA3A34AB1AE40A4A0042FB88 /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3A34AA1AE40A4A0042FB88 /* SwipeViewController.m */; };
 		EA3A34B21AE418010042FB88 /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3A34AD1AE418010042FB88 /* DrawViewController.m */; };
 		EA3A34B31AE418010042FB88 /* WTMGlyphDetectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3A34AF1AE418010042FB88 /* WTMGlyphDetectorView.m */; };
@@ -87,6 +89,7 @@
 		EA48703D1AE1E31A002A5A3D /* F.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA4870301AE1E31A002A5A3D /* F.mp3 */; };
 		EA48703E1AE1E31A002A5A3D /* G#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA4870311AE1E31A002A5A3D /* G#.mp3 */; };
 		EA48703F1AE1E31A002A5A3D /* G.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA4870321AE1E31A002A5A3D /* G.mp3 */; };
+		EA76F5B31AE559E800AAD496 /* house.svg in Resources */ = {isa = PBXBuildFile; fileRef = EA76F5B21AE559E800AAD496 /* house.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +103,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA0F49401AE540660020B086 /* PocketSVG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocketSVG.h; sourceTree = "<group>"; };
+		EA0F49411AE540660020B086 /* PocketSVG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PocketSVG.m; sourceTree = "<group>"; };
+		EA0F49431AE540840020B086 /* PocketSVG iOS Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PocketSVG iOS Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		EA0F494E1AE54ACF0020B086 /* ruby.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ruby.svg; sourceTree = "<group>"; };
 		EA3A34A91AE40A4A0042FB88 /* SwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeViewController.h; sourceTree = "<group>"; };
 		EA3A34AA1AE40A4A0042FB88 /* SwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeViewController.m; sourceTree = "<group>"; };
 		EA3A34AC1AE418000042FB88 /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
@@ -210,6 +217,7 @@
 		EA4870301AE1E31A002A5A3D /* F.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = F.mp3; sourceTree = "<group>"; };
 		EA4870311AE1E31A002A5A3D /* G#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "G#.mp3"; sourceTree = "<group>"; };
 		EA4870321AE1E31A002A5A3D /* G.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = G.mp3; sourceTree = "<group>"; };
+		EA76F5B21AE559E800AAD496 /* house.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = house.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -397,6 +405,9 @@
 		EA486FE71AE1D957002A5A3D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EA0F49401AE540660020B086 /* PocketSVG.h */,
+				EA0F49411AE540660020B086 /* PocketSVG.m */,
+				EA0F49431AE540840020B086 /* PocketSVG iOS Example-Bridging-Header.h */,
 				EA3A34B91AE418990042FB88 /* WTMGlyph */,
 				EA3A34FD1AE4226B0042FB88 /* Frameworks */,
 				EA3A34FE1AE422970042FB88 /* WTMGlyphDemo-Info.plist */,
@@ -429,6 +440,8 @@
 		EA4870201AE1E2D5002A5A3D /* image */ = {
 			isa = PBXGroup;
 			children = (
+				EA0F494E1AE54ACF0020B086 /* ruby.svg */,
+				EA76F5B21AE559E800AAD496 /* house.svg */,
 				EA4870211AE1E2D5002A5A3D /* black.jpg */,
 				EA4870221AE1E2D5002A5A3D /* white.jpg */,
 			);
@@ -536,11 +549,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA3A35301AE422D80042FB88 /* R.json in Resources */,
+				EA76F5B31AE559E800AAD496 /* house.svg in Resources */,
 				EA3A352F1AE422D80042FB88 /* Q.json in Resources */,
 				EA3A352A1AE422D80042FB88 /* L.json in Resources */,
 				EA3A35291AE422D80042FB88 /* K.json in Resources */,
 				EA3A35261AE422D80042FB88 /* H.json in Resources */,
 				EA3A35221AE422D80042FB88 /* D.json in Resources */,
+				EA0F494F1AE54ACF0020B086 /* ruby.svg in Resources */,
 				EA3A35271AE422D80042FB88 /* I.json in Resources */,
 				EA3A352B1AE422D80042FB88 /* M.json in Resources */,
 				EA3A35321AE422D80042FB88 /* square.json in Resources */,
@@ -613,6 +628,7 @@
 				EA3A34F21AE418990042FB88 /* WTMGlyphDefaults.m in Sources */,
 				EA4870191AE1DF55002A5A3D /* Piano.swift in Sources */,
 				EA486FED1AE1D957002A5A3D /* AppDelegate.m in Sources */,
+				EA0F49421AE540660020B086 /* PocketSVG.m in Sources */,
 				EA3A34F01AE418990042FB88 /* WTMDetectionResult.m in Sources */,
 				EA3A34E51AE418990042FB88 /* CFilteringJSONSerializer.m in Sources */,
 				EA3A34EA1AE418990042FB88 /* NSDictionary_JSONExtensions.m in Sources */,

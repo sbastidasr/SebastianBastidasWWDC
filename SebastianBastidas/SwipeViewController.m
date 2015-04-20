@@ -25,7 +25,6 @@
     recognizerLeft.delegate = self;
     [self.view addGestureRecognizer:recognizerLeft];
 
-    
     [self.navigationController setNavigationBarHidden:YES];
 }
 
@@ -50,6 +49,20 @@
         
     }
         //Add Swipe Gesture
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"embedSegue"]) {
+        [self prepareForMapEmbeddingSegue:segue sender:sender];
+    }
+}
+
+- (void)prepareForMapEmbeddingSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    DrawViewController *drawVC = (DrawViewController *)segue.destinationViewController;
+    drawVC.title=self.title;
+    
+    // We can do any additional setup on mapViewController here,
+    // like set its initial viewport.
 }
 
 
