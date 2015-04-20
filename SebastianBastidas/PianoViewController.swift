@@ -20,13 +20,15 @@ class PianoViewController: UIViewController {
         
         
         
-        var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
-        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
-        self.view.addGestureRecognizer(swipeRight)
+        var swipeLeft = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
+        self.view.addGestureRecognizer(swipeLeft)
 
     //    [self.navigationController setNavigationBarHidden:YES];
         
-        
+        var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        self.view.addGestureRecognizer(swipeRight)
         
     }
     
@@ -59,6 +61,12 @@ class PianoViewController: UIViewController {
 
                 if let navController = self.navigationController {
                     navController.popViewControllerAnimated(true)
+                }
+            case UISwipeGestureRecognizerDirection.Left:
+                    
+                    if let navController = self.navigationController {
+                        
+                     self.performSegueWithIdentifier("next", sender: self)
                 }
             case UISwipeGestureRecognizerDirection.Down:
                 println("Swiped down")
