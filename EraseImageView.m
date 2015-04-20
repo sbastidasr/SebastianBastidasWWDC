@@ -146,7 +146,7 @@
 {
     if ((self=[super initWithCoder:aDecoder])) {
         [self createBitmapContext];
-        _touchWidth=10.;
+        _touchWidth=20.;
     }
     return self;
 }
@@ -155,7 +155,7 @@
 {
     if ((self=[super initWithFrame:frame])) {
         [self createBitmapContext];
-        _touchWidth=10.;
+        _touchWidth=60.;
     }
     return self;
 }
