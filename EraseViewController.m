@@ -16,11 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    EraseImageView* imageView = [[EraseImageView alloc]initWithFrame:self.view.frame];
+    
+   CGRect newFrame=self.view.frame;
+
+ //   newFrame.origin.y -= (newFrame.size.height*0.08);
+    
+    EraseImageView* imageView = [[EraseImageView alloc]initWithFrame:newFrame];
     imageView.foregroundImage =  [UIImage imageNamed:@"color.png"];
     imageView.backgroundImage =  [UIImage imageNamed:@"colored.png"];
    
-    self.view=imageView;
+    [self.view addSubview:imageView];
     
 }
 
