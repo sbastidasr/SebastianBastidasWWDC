@@ -4,55 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--Swipe View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="SwipeViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxG-X1-DyS">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="179" y="237" width="52" height="21"/>
-                                </variation>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <gestureRecognizers/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="uxG-X1-DyS"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="uxG-X1-DyS"/>
-                            </mask>
-                        </variation>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="bCZ-MC-xeW" appends="YES" id="E1e-Of-SRp"/>
-                        </connections>
-                    </view>
-                    <navigationItem key="navigationItem" id="Z1a-zc-skN"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="bCZ-MC-xeW">
-                    <connections>
-                        <segue destination="izB-WC-eTJ" kind="show" id="oAi-qA-aIg"/>
-                    </connections>
-                </swipeGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="652.5" y="-211"/>
-        </scene>
         <!--Piano View Controller-->
         <scene sceneID="yes-xx-R8T">
             <objects>
@@ -62,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="guY-DJ-3lb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QCH-39-62A">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiA-ZA-zRT">
@@ -73,7 +24,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="265" y="198" width="52" height="203"/>
+                                    <rect key="frame" x="265" y="232" width="52" height="203"/>
                                 </variation>
                                 <connections>
                                     <action selector="playKey:" destination="27K-jF-ekG" eventType="touchUpInside" id="qzi-qT-APD"/>
@@ -87,7 +38,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="216" y="198" width="51" height="203"/>
+                                    <rect key="frame" x="216" y="232" width="51" height="203"/>
                                 </variation>
                                 <connections>
                                     <action selector="playKey:" destination="27K-jF-ekG" eventType="touchUpInside" id="Y4a-ls-egC"/>
@@ -101,7 +52,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="166" y="198" width="52" height="203"/>
+                                    <rect key="frame" x="166" y="232" width="52" height="203"/>
                                 </variation>
                                 <connections>
                                     <action selector="playKey:" destination="27K-jF-ekG" eventType="touchUpInside" id="9j0-Kf-X9U"/>
@@ -115,7 +66,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="116" y="198" width="52" height="203"/>
+                                    <rect key="frame" x="116" y="232" width="52" height="203"/>
                                 </variation>
                                 <connections>
                                     <action selector="playKey:" destination="27K-jF-ekG" eventType="touchUpInside" id="uyR-CN-rER"/>
@@ -129,7 +80,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="66" y="198" width="52" height="203"/>
+                                    <rect key="frame" x="66" y="232" width="52" height="203"/>
                                 </variation>
                                 <connections>
                                     <action selector="playKey:" destination="27K-jF-ekG" eventType="touchUpInside" id="EDb-lg-JN9"/>
@@ -143,7 +94,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="198" width="52" height="203"/>
+                                    <rect key="frame" x="16" y="232" width="52" height="203"/>
                                 </variation>
                                 <connections>
                                     <action selector="playKey:" destination="27K-jF-ekG" eventType="touchUpInside" id="lNA-GN-xtZ"/>
@@ -157,7 +108,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="52" y="198" width="34" height="119"/>
+                                    <rect key="frame" x="52" y="232" width="34" height="119"/>
                                 </variation>
                                 <connections>
                                     <action selector="playKey:" destination="27K-jF-ekG" eventType="touchUpInside" id="LxO-dt-ARH"/>
@@ -171,7 +122,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="251" y="198" width="34" height="119"/>
+                                    <rect key="frame" x="251" y="232" width="34" height="119"/>
                                 </variation>
                                 <connections>
                                     <action selector="playKey:" destination="27K-jF-ekG" eventType="touchUpInside" id="Pvf-eD-aMr"/>
@@ -185,7 +136,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="315" y="198" width="52" height="203"/>
+                                    <rect key="frame" x="315" y="232" width="44" height="203"/>
                                 </variation>
                                 <connections>
                                     <action selector="playKey:" destination="27K-jF-ekG" eventType="touchUpInside" id="mKo-im-Drg"/>
@@ -199,7 +150,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="299" y="198" width="34" height="119"/>
+                                    <rect key="frame" x="299" y="232" width="34" height="119"/>
                                 </variation>
                                 <connections>
                                     <action selector="playKey:" destination="27K-jF-ekG" eventType="touchUpInside" id="lGD-Cw-ADI"/>
@@ -213,7 +164,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="101" y="198" width="34" height="119"/>
+                                    <rect key="frame" x="101" y="232" width="34" height="119"/>
                                 </variation>
                                 <connections>
                                     <action selector="playKey:" destination="27K-jF-ekG" eventType="touchUpInside" id="4cC-mB-8Uq"/>
@@ -226,12 +177,36 @@
                                     <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="201" y="198" width="34" height="119"/>
+                                    <rect key="frame" x="201" y="232" width="34" height="119"/>
                                 </variation>
                                 <connections>
                                     <action selector="playKey:" destination="27K-jF-ekG" eventType="touchUpInside" id="gwP-ui-CaF"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Press the keys to" translatesAutoresizingMaskIntoConstraints="NO" id="FM0-xF-et9">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="66" y="72" width="243" height="36"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Enjoy a tune! " translatesAutoresizingMaskIntoConstraints="NO" id="7bf-vM-LNh">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="53" y="116" width="268" height="50"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="&lt;&lt;  or swipe to cont" translatesAutoresizingMaskIntoConstraints="NO" id="PuM-zV-IRh">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="67" y="625" width="250" height="22"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="I love music" translatesAutoresizingMaskIntoConstraints="NO" id="WNu-Ax-4Ry">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="102" y="524" width="171" height="29"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -248,6 +223,10 @@
                                 <exclude reference="nSY-rd-GaS"/>
                                 <exclude reference="25v-IC-RiW"/>
                                 <exclude reference="PY9-te-YTf"/>
+                                <exclude reference="FM0-xF-et9"/>
+                                <exclude reference="7bf-vM-LNh"/>
+                                <exclude reference="PuM-zV-IRh"/>
+                                <exclude reference="WNu-Ax-4Ry"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -264,13 +243,17 @@
                                 <include reference="nSY-rd-GaS"/>
                                 <include reference="25v-IC-RiW"/>
                                 <include reference="PY9-te-YTf"/>
+                                <include reference="FM0-xF-et9"/>
+                                <include reference="7bf-vM-LNh"/>
+                                <include reference="PuM-zV-IRh"/>
+                                <include reference="WNu-Ax-4Ry"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OP2-ji-t85" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2166" y="-156"/>
+            <point key="canvasLocation" x="1388.25" y="-169.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jwL-03-d7R">
@@ -283,48 +266,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yYT-Ol-P5k"/>
+                        <segue destination="umo-Ih-Ooa" kind="relationship" relationship="rootViewController" id="3A7-q8-nYC"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfp-WB-Qpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-615" y="-211"/>
-        </scene>
-        <!--Draw View Controller-->
-        <scene sceneID="rwS-g0-XDt">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="7lw-js-VYy" customClass="DrawViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xpX-XU-k9p"/>
-                        <viewControllerLayoutGuide type="bottom" id="nIq-yl-TLe"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="x3e-d4-a26">
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone 40.png" translatesAutoresizingMaskIntoConstraints="NO" id="ePU-Gn-APX">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
-                                </variation>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="ePU-Gn-APX"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="ePU-Gn-APX"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <toolbarItems/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BaY-yy-y6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="466.5" y="483"/>
         </scene>
         <!--Swipe View Controller-->
         <scene sceneID="K1Y-AN-Gib">
@@ -335,22 +282,19 @@
                         <viewControllerLayoutGuide type="bottom" id="4uA-CB-kIP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nCa-V9-dNT">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3D-P5-mgW">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DrawRuby" translatesAutoresizingMaskIntoConstraints="NO" id="jq4-iy-jaE">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="179" y="237" width="52" height="21"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 </variation>
-                            </label>
+                            </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2U-yu-KQc">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="123" width="375" height="250"/>
+                                    <rect key="frame" x="0.0" y="209" width="375" height="250"/>
                                 </variation>
                                 <connections>
                                     <segue destination="Jmh-f2-oQJ" kind="embed" id="OQF-dv-ZfR"/>
@@ -361,30 +305,26 @@
                         <gestureRecognizers/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="W3D-P5-mgW"/>
+                                <exclude reference="jq4-iy-jaE"/>
                                 <exclude reference="C2U-yu-KQc"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="W3D-P5-mgW"/>
+                                <include reference="jq4-iy-jaE"/>
                                 <include reference="C2U-yu-KQc"/>
                             </mask>
                         </variation>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="xR1-th-wBk" appends="YES" id="5yW-FY-7Kl"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="wKE-xO-IbS"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="27K-jF-ekG" kind="show" identifier="next" id="kQv-LC-o8C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I68-Cc-BdY" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="xR1-th-wBk">
-                    <connections>
-                        <segue destination="27K-jF-ekG" kind="show" id="Ehb-uw-q2H"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1377" y="-205"/>
+            <point key="canvasLocation" x="774.75" y="-169.5"/>
         </scene>
         <!--Draw View Controller-->
         <scene sceneID="PMY-pn-ylW">
@@ -395,6 +335,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Dl8-LT-Hk3"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="z0T-Rj-gdc">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Start drawing" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4q8-DL-fQl">
@@ -407,7 +348,6 @@
                                 </variation>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.050980396568775177" green="0.14117647707462311" blue="0.9647059440612793" alpha="1" colorSpace="deviceRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="4q8-DL-fQl"/>
@@ -426,12 +366,147 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aUn-qQ-XcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1377" y="538"/>
+            <point key="canvasLocation" x="756.75" y="428"/>
+        </scene>
+        <!--Swipe View Controller-->
+        <scene sceneID="ZMY-7p-33V">
+            <objects>
+                <viewController id="umo-Ih-Ooa" customClass="SwipeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UN6-hc-fVo"/>
+                        <viewControllerLayoutGuide type="bottom" id="kEN-2S-u1y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WOv-7P-M4X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PXi-RG-3Ca">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="209" width="375" height="250"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="m91-k1-frU" kind="embed" id="Orc-wn-sRa"/>
+                                </connections>
+                            </containerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="&lt;&lt;  or swipe to cont" translatesAutoresizingMaskIntoConstraints="NO" id="tYI-kv-Wyb">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="62" y="625" width="250" height="22"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="to view my home!" translatesAutoresizingMaskIntoConstraints="NO" id="9QS-Ze-0OL">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="58" y="534" width="259" height="36"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Please," translatesAutoresizingMaskIntoConstraints="NO" id="R0Q-mq-WXL">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="39" y="72" width="96" height="33"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Draw a house! " translatesAutoresizingMaskIntoConstraints="NO" id="9eM-Km-9UH">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="39" y="113" width="297" height="41"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="House" translatesAutoresizingMaskIntoConstraints="NO" id="hAs-aW-ruJ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="105" y="258" width="165" height="151"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="PXi-RG-3Ca"/>
+                                <exclude reference="tYI-kv-Wyb"/>
+                                <exclude reference="9QS-Ze-0OL"/>
+                                <exclude reference="R0Q-mq-WXL"/>
+                                <exclude reference="9eM-Km-9UH"/>
+                                <exclude reference="hAs-aW-ruJ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="PXi-RG-3Ca"/>
+                                <include reference="tYI-kv-Wyb"/>
+                                <include reference="9QS-Ze-0OL"/>
+                                <include reference="R0Q-mq-WXL"/>
+                                <include reference="9eM-Km-9UH"/>
+                                <include reference="hAs-aW-ruJ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="rFJ-7P-ENG"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="izB-WC-eTJ" kind="show" identifier="next" id="eEx-Ze-UTm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cXt-1h-2yk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.75" y="-177.5"/>
+        </scene>
+        <!--Draw View Controller-->
+        <scene sceneID="v0X-NZ-91R">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="m91-k1-frU" customClass="DrawViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eIr-AP-gaK"/>
+                        <viewControllerLayoutGuide type="bottom" id="bHW-Hc-9bl"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jQ1-Z2-Fyv">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Start drawing" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zPL-oW-nKD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="zPL-oW-nKD"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="zPL-oW-nKD"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="lblStatus" destination="zPL-oW-nKD" id="btO-72-i9J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f1m-hO-s0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122.25" y="428"/>
         </scene>
     </scenes>
     <resources>
+        <image name="&lt;&lt;  or swipe to cont" width="250" height="22"/>
+        <image name="Draw a house! " width="297" height="41"/>
+        <image name="DrawRuby" width="375" height="667"/>
+        <image name="Enjoy a tune! " width="268" height="50"/>
+        <image name="House" width="165" height="151"/>
+        <image name="I love music" width="171" height="29"/>
+        <image name="Please," width="96" height="33"/>
+        <image name="Press the keys to" width="243" height="36"/>
         <image name="black.jpg" width="40" height="140"/>
-        <image name="iPhone 40.png" width="750" height="500"/>
+        <image name="to view my home!" width="259" height="36"/>
         <image name="white.jpg" width="60" height="230"/>
     </resources>
 </document>

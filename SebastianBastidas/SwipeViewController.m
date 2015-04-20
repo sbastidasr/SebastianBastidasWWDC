@@ -7,29 +7,35 @@
 //
 
 #import "SwipeViewController.h"
+#import "DrawViewController.h"
 
 @implementation SwipeViewController
 
 -(void)viewDidLoad{
     //Add Swipe Gesture Right
-    UISwipeGestureRecognizer *recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(SwipeRecognizer:)];
-    recognizer.direction = UISwipeGestureRecognizerDirectionRight;
-    recognizer.numberOfTouchesRequired = 1;
-    recognizer.delegate = self;
-    [self.view addGestureRecognizer:recognizer];
+    UISwipeGestureRecognizer *recognizerRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(SwipeRecognizer:)];
+    recognizerRight.direction = UISwipeGestureRecognizerDirectionRight;
+    //    recognizer.numberOfTouchesRequired = 1;
+    recognizerRight.delegate = self;
+    [self.view addGestureRecognizer:recognizerRight];
+    
+        //Add Swipe Gesture Left
+    UISwipeGestureRecognizer *recognizerLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(SwipeRecognizer:)];
+    recognizerLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+    recognizerLeft.delegate = self;
+    [self.view addGestureRecognizer:recognizerLeft];
 
     
     [self.navigationController setNavigationBarHidden:YES];
 }
 
-
-//Delegate
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
-    if ([touch.view isKindOfClass:[UIView class]])
-    {
-        return YES;
+    
+    // Disallow recognition of tap gestures in the segmented control.
+    if ((touch.view != self.view)) {//change it to your condition
+        return NO;
     }
-    return NO;
+    return YES;
 }
 
 //Method to handle event on swipe
@@ -38,7 +44,12 @@
         
         [self.navigationController popViewControllerAnimated:YES];
         
+    }else if ( sender.direction == UISwipeGestureRecognizerDirectionLeft ){
+        
+     [self performSegueWithIdentifier:@"next" sender:self];
+        
     }
+        //Add Swipe Gesture
 }
 
 

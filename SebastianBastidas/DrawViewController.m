@@ -27,7 +27,7 @@
   self.gestureDetectorView = [[WTMGlyphDetectorView alloc] initWithFrame:self.view.bounds];
   self.gestureDetectorView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
   self.gestureDetectorView.delegate = self;
-  [self.gestureDetectorView loadTemplatesWithNames:@"A",@"B",@"C",@"X",@"Y",@"Z",@"N", @"T", @"W", @"V", @"circle", @"square", @"triangle",@"ruby",@"4", nil];
+  [self.gestureDetectorView loadTemplatesWithNames:@"A",@"B",@"C",@"X",@"Y",@"Z",@"N", @"T", @"W", @"V", @"ruby",  @"square", @"triangle",@"4", nil];
   [self.view addSubview:self.gestureDetectorView];
 }
 

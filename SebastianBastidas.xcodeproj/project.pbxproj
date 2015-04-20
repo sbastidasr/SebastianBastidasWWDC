@@ -64,7 +64,6 @@
 		EA3A353A1AE422D80042FB88 /* Z.json in Resources */ = {isa = PBXBuildFile; fileRef = EA3A351D1AE422D80042FB88 /* Z.json */; };
 		EA3A35401AE44DB20042FB88 /* 4.json in Resources */ = {isa = PBXBuildFile; fileRef = EA3A353F1AE44DB20042FB88 /* 4.json */; };
 		EA3A35421AE44E260042FB88 /* ruby.json in Resources */ = {isa = PBXBuildFile; fileRef = EA3A35411AE44E260042FB88 /* ruby.json */; };
-		EA3A35441AE44F850042FB88 /* iPhone 40.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3A35431AE44F850042FB88 /* iPhone 40.png */; };
 		EA486FEA1AE1D957002A5A3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA486FE91AE1D957002A5A3D /* main.m */; };
 		EA486FED1AE1D957002A5A3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA486FEC1AE1D957002A5A3D /* AppDelegate.m */; };
 		EA486FF31AE1D958002A5A3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA486FF11AE1D958002A5A3D /* Main.storyboard */; };
@@ -182,7 +181,6 @@
 		EA3A351D1AE422D80042FB88 /* Z.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Z.json; sourceTree = "<group>"; };
 		EA3A353F1AE44DB20042FB88 /* 4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 4.json; sourceTree = "<group>"; };
 		EA3A35411AE44E260042FB88 /* ruby.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ruby.json; sourceTree = "<group>"; };
-		EA3A35431AE44F850042FB88 /* iPhone 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 40.png"; sourceTree = "<group>"; };
 		EA486FE41AE1D957002A5A3D /* SebastianBastidas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SebastianBastidas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA486FE81AE1D957002A5A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA486FE91AE1D957002A5A3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -399,7 +397,6 @@
 		EA486FE71AE1D957002A5A3D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EA3A35431AE44F850042FB88 /* iPhone 40.png */,
 				EA3A34B91AE418990042FB88 /* WTMGlyph */,
 				EA3A34FD1AE4226B0042FB88 /* Frameworks */,
 				EA3A34FE1AE422970042FB88 /* WTMGlyphDemo-Info.plist */,
@@ -587,7 +584,6 @@
 				EA3A34EF1AE418990042FB88 /* protractor-chi2010.pdf in Resources */,
 				EA4870331AE1E31A002A5A3D /* A#.mp3 in Resources */,
 				EA4870241AE1E2D5002A5A3D /* white.jpg in Resources */,
-				EA3A35441AE44F850042FB88 /* iPhone 40.png in Resources */,
 				EA4870381AE1E31A002A5A3D /* C4.mp3 in Resources */,
 				EA3A351E1AE422D80042FB88 /* A.json in Resources */,
 				EA3A352D1AE422D80042FB88 /* O.json in Resources */,
