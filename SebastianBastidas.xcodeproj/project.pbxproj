@@ -90,6 +90,13 @@
 		EA48703E1AE1E31A002A5A3D /* G#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA4870311AE1E31A002A5A3D /* G#.mp3 */; };
 		EA48703F1AE1E31A002A5A3D /* G.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA4870321AE1E31A002A5A3D /* G.mp3 */; };
 		EA76F5B31AE559E800AAD496 /* house.svg in Resources */ = {isa = PBXBuildFile; fileRef = EA76F5B21AE559E800AAD496 /* house.svg */; };
+		EA76F5F71AE5A8DB00AAD496 /* EraseImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA76F5F61AE5A8DB00AAD496 /* EraseImageView.m */; };
+		EA76F5FA1AE5A9CA00AAD496 /* EraseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA76F5F91AE5A9CA00AAD496 /* EraseViewController.m */; };
+		EA76F5FE1AE5AAB000AAD496 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76F5FC1AE5AAB000AAD496 /* 1.png */; };
+		EA76F6021AE5B09800AAD496 /* colorBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76F6001AE5B09800AAD496 /* colorBackground.png */; };
+		EA76F6041AE5B0E300AAD496 /* computerWithWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76F6031AE5B0E300AAD496 /* computerWithWhite.png */; };
+		EA76F6061AE5B1B800AAD496 /* color.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76F6051AE5B1B800AAD496 /* color.png */; };
+		EA76F6081AE5B2FA00AAD496 /* colored.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76F6071AE5B2FA00AAD496 /* colored.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +225,15 @@
 		EA4870311AE1E31A002A5A3D /* G#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "G#.mp3"; sourceTree = "<group>"; };
 		EA4870321AE1E31A002A5A3D /* G.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = G.mp3; sourceTree = "<group>"; };
 		EA76F5B21AE559E800AAD496 /* house.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = house.svg; sourceTree = "<group>"; };
+		EA76F5F51AE5A8DB00AAD496 /* EraseImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EraseImageView.h; sourceTree = "<group>"; };
+		EA76F5F61AE5A8DB00AAD496 /* EraseImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EraseImageView.m; sourceTree = "<group>"; };
+		EA76F5F81AE5A9CA00AAD496 /* EraseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EraseViewController.h; sourceTree = "<group>"; };
+		EA76F5F91AE5A9CA00AAD496 /* EraseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EraseViewController.m; sourceTree = "<group>"; };
+		EA76F5FC1AE5AAB000AAD496 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		EA76F6001AE5B09800AAD496 /* colorBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorBackground.png; sourceTree = "<group>"; };
+		EA76F6031AE5B0E300AAD496 /* computerWithWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = computerWithWhite.png; sourceTree = "<group>"; };
+		EA76F6051AE5B1B800AAD496 /* color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color.png; sourceTree = "<group>"; };
+		EA76F6071AE5B2FA00AAD496 /* colored.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colored.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,6 +380,10 @@
 		EA486FDB1AE1D957002A5A3D = {
 			isa = PBXGroup;
 			children = (
+				EA76F5F81AE5A9CA00AAD496 /* EraseViewController.h */,
+				EA76F5F91AE5A9CA00AAD496 /* EraseViewController.m */,
+				EA76F5F51AE5A8DB00AAD496 /* EraseImageView.h */,
+				EA76F5F61AE5A8DB00AAD496 /* EraseImageView.m */,
 				EA486FE61AE1D957002A5A3D /* SebastianBastidas */,
 				EA4870001AE1D958002A5A3D /* SebastianBastidasTests */,
 				EA486FE51AE1D957002A5A3D /* Products */,
@@ -440,6 +460,11 @@
 		EA4870201AE1E2D5002A5A3D /* image */ = {
 			isa = PBXGroup;
 			children = (
+				EA76F6031AE5B0E300AAD496 /* computerWithWhite.png */,
+				EA76F6071AE5B2FA00AAD496 /* colored.png */,
+				EA76F6051AE5B1B800AAD496 /* color.png */,
+				EA76F6001AE5B09800AAD496 /* colorBackground.png */,
+				EA76F5FC1AE5AAB000AAD496 /* 1.png */,
 				EA0F494E1AE54ACF0020B086 /* ruby.svg */,
 				EA76F5B21AE559E800AAD496 /* house.svg */,
 				EA4870211AE1E2D5002A5A3D /* black.jpg */,
@@ -558,11 +583,13 @@
 				EA0F494F1AE54ACF0020B086 /* ruby.svg in Resources */,
 				EA3A35271AE422D80042FB88 /* I.json in Resources */,
 				EA3A352B1AE422D80042FB88 /* M.json in Resources */,
+				EA76F6081AE5B2FA00AAD496 /* colored.png in Resources */,
 				EA3A35321AE422D80042FB88 /* square.json in Resources */,
 				EA48703C1AE1E31A002A5A3D /* F#.mp3 in Resources */,
 				EA3A35201AE422D80042FB88 /* C.json in Resources */,
 				EA3A35211AE422D80042FB88 /* circle.json in Resources */,
 				EA3A34EE1AE418990042FB88 /* ndollar.js in Resources */,
+				EA76F6061AE5B1B800AAD496 /* color.png in Resources */,
 				EA4870371AE1E31A002A5A3D /* C3.mp3 in Resources */,
 				EA3A35391AE422D80042FB88 /* Y.json in Resources */,
 				EA3A35361AE422D80042FB88 /* V.json in Resources */,
@@ -577,7 +604,9 @@
 				EA3A35381AE422D80042FB88 /* X.json in Resources */,
 				EA3A35241AE422D80042FB88 /* F.json in Resources */,
 				EA48703F1AE1E31A002A5A3D /* G.mp3 in Resources */,
+				EA76F6021AE5B09800AAD496 /* colorBackground.png in Resources */,
 				EA3A35401AE44DB20042FB88 /* 4.json in Resources */,
+				EA76F6041AE5B0E300AAD496 /* computerWithWhite.png in Resources */,
 				EA48703A1AE1E31A002A5A3D /* D.mp3 in Resources */,
 				EA486FF81AE1D958002A5A3D /* LaunchScreen.xib in Resources */,
 				EA3A35351AE422D80042FB88 /* U.json in Resources */,
@@ -588,6 +617,7 @@
 				EA3A35251AE422D80042FB88 /* G.json in Resources */,
 				EA3A352C1AE422D80042FB88 /* N.json in Resources */,
 				EA3A35311AE422D80042FB88 /* S.json in Resources */,
+				EA76F5FE1AE5AAB000AAD496 /* 1.png in Resources */,
 				EA486FF51AE1D958002A5A3D /* Images.xcassets in Resources */,
 				EA48703D1AE1E31A002A5A3D /* F.mp3 in Resources */,
 				EA3A35371AE422D80042FB88 /* W.json in Resources */,
@@ -626,6 +656,7 @@
 				EA3A34ED1AE418990042FB88 /* CJSONSerializer.m in Sources */,
 				EA3A34B21AE418010042FB88 /* DrawViewController.m in Sources */,
 				EA3A34F21AE418990042FB88 /* WTMGlyphDefaults.m in Sources */,
+				EA76F5FA1AE5A9CA00AAD496 /* EraseViewController.m in Sources */,
 				EA4870191AE1DF55002A5A3D /* Piano.swift in Sources */,
 				EA486FED1AE1D957002A5A3D /* AppDelegate.m in Sources */,
 				EA0F49421AE540660020B086 /* PocketSVG.m in Sources */,
@@ -642,6 +673,7 @@
 				EA486FEA1AE1D957002A5A3D /* main.m in Sources */,
 				EA3A34E61AE418990042FB88 /* CJSONDeserializer_BlocksExtensions.m in Sources */,
 				EA3A34B31AE418010042FB88 /* WTMGlyphDetectorView.m in Sources */,
+				EA76F5F71AE5A8DB00AAD496 /* EraseImageView.m in Sources */,
 				EA3A34F61AE418990042FB88 /* WTMGlyphUtilities.m in Sources */,
 				EA3A34E81AE418990042FB88 /* CJSONSerializedData.m in Sources */,
 			);

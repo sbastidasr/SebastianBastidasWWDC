@@ -13,6 +13,7 @@
 #import "WTMGlyphDetectorView.h"
 #import "PocketSVG.h"
 @interface DrawViewController ()
+
 @property (nonatomic, strong) WTMGlyphDetectorView *gestureDetectorView;
 @property (nonatomic, strong) IBOutlet UILabel *lblStatus;
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7Wa-0q-bhL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qpd-wQ-p3J">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -255,6 +255,23 @@
             </objects>
             <point key="canvasLocation" x="1742.25" y="-169.5"/>
         </scene>
+        <!--Erase View Controller-->
+        <scene sceneID="q8u-lp-CxT">
+            <objects>
+                <viewController id="qpd-wQ-p3J" customClass="EraseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AJ2-cd-OXW"/>
+                        <viewControllerLayoutGuide type="bottom" id="gXw-vN-LVo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kAA-0b-vCT">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tWl-FH-feS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2133" y="566"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="jwL-03-d7R">
             <objects>
@@ -388,6 +405,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xww-qC-4dP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gPb-HH-8V7">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIk-JL-wBL">
@@ -505,7 +523,6 @@
         <!--Draw View Controller-->
         <scene sceneID="v0X-NZ-91R">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f1m-hO-s0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="m91-k1-frU" customClass="DrawViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eIr-AP-gaK"/>
@@ -520,6 +537,7 @@
                         <segue destination="Tex-nE-BOS" kind="show" identifier="detail" id="fTp-f3-Ngq"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f1m-hO-s0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="122.25" y="428"/>
         </scene>
@@ -532,6 +550,7 @@
                         <viewControllerLayoutGuide type="bottom" id="1VT-tf-NYH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vqY-Ua-qnd">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O00-zw-5qL">
