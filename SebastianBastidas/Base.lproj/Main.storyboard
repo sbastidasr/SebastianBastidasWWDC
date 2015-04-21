@@ -21,18 +21,6 @@
                                     <rect key="frame" x="22" y="86" width="320" height="425"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shake your iphone! " translatesAutoresizingMaskIntoConstraints="NO" id="7Mo-Cu-Faq">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="69" y="505" width="237" height="112"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="&lt;&lt;  or swipe to cont" translatesAutoresizingMaskIntoConstraints="NO" id="gYP-MV-7XN">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="62" y="625" width="250" height="22"/>
-                                </variation>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="I have experience in" translatesAutoresizingMaskIntoConstraints="NO" id="78o-oo-nLj">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -45,25 +33,45 @@
                                     <rect key="frame" x="134" y="108" width="106" height="39"/>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shake your iphone! " translatesAutoresizingMaskIntoConstraints="NO" id="7Mo-Cu-Faq">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="69" y="505" width="237" height="112"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="&lt;&lt;  or swipe to cont" translatesAutoresizingMaskIntoConstraints="NO" id="gYP-MV-7XN">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="62" y="625" width="250" height="22"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tree" translatesAutoresizingMaskIntoConstraints="NO" id="g9d-ax-Cs6">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="86" width="320" height="425"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="aWe-nm-92e"/>
-                                <exclude reference="7Mo-Cu-Faq"/>
-                                <exclude reference="gYP-MV-7XN"/>
                                 <exclude reference="78o-oo-nLj"/>
                                 <exclude reference="w1R-Ru-rpK"/>
+                                <exclude reference="7Mo-Cu-Faq"/>
+                                <exclude reference="gYP-MV-7XN"/>
+                                <exclude reference="g9d-ax-Cs6"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="aWe-nm-92e"/>
-                                <include reference="7Mo-Cu-Faq"/>
-                                <include reference="gYP-MV-7XN"/>
                                 <include reference="78o-oo-nLj"/>
                                 <include reference="w1R-Ru-rpK"/>
+                                <include reference="7Mo-Cu-Faq"/>
+                                <include reference="gYP-MV-7XN"/>
+                                <include reference="g9d-ax-Cs6"/>
                             </mask>
                         </variation>
                     </view>
@@ -831,6 +839,7 @@
         <image name="ruby" width="190" height="153"/>
         <image name="to view my home!" width="259" height="36"/>
         <image name="to view the story" width="239" height="36"/>
+        <image name="tree" width="2448" height="3264"/>
         <image name="treeBranches" width="2448" height="3264"/>
         <image name="white.jpg" width="60" height="230"/>
     </resources>

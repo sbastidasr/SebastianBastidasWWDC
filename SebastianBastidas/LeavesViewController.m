@@ -71,19 +71,28 @@
     pathLayer.lineWidth = 10;
     pathLayer.fillColor = [[UIColor clearColor] CGColor];
     
-    pathLayer.position= [[self imagePoints][@"ruby"]CGPointValue];
+    pathLayer.position= CGPointMake(50, 200);
+    
+    
+    pathLayer.transform = CATransform3DMakeScale(0.2, 0.2, 0.2);
     
     //4: Display it!
     [self.view.layer addSublayer:pathLayer];
-  
+    
     
     /*
-    // pathLayer.transform = CATransform3DMakeScale(0.3, 0.3, 0.3);
-    CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    pathAnimation.duration = 7.0;
-    pathAnimation.repeatCount= NSIntegerMax;
-    pathAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
-    pathAnimation.toValue = [NSNumber numberWithFloat:1.0f];
-    [pathLayer addAnimation:pathAnimation forKey:@"strokeEnd"];*/
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.keyPath = @"position.y";
+    animation.fromValue = @200;
+    animation.toValue = @350;
+    animation.duration = 2;
+    
+    [pathLayer addAnimation:animation forKey:@"basic"];
+    
+    pathLayer.position = CGPointMake(50, 350);*/
 }
 @end
+
+
+
+
