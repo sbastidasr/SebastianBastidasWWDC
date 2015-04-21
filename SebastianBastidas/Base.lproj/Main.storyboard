@@ -186,13 +186,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Press the keys to" translatesAutoresizingMaskIntoConstraints="NO" id="FM0-xF-et9">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="66" y="72" width="243" height="36"/>
+                                    <rect key="frame" x="66" y="65" width="243" height="36"/>
                                 </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Enjoy a tune! " translatesAutoresizingMaskIntoConstraints="NO" id="7bf-vM-LNh">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="53" y="116" width="268" height="50"/>
+                                    <rect key="frame" x="53" y="106" width="268" height="50"/>
                                 </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="&lt;&lt;  or swipe to cont" translatesAutoresizingMaskIntoConstraints="NO" id="PuM-zV-IRh">
@@ -253,7 +253,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OP2-ji-t85" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1742.25" y="-169.5"/>
+            <point key="canvasLocation" x="929.25" y="-150.5"/>
         </scene>
         <!--Erase View Controller-->
         <scene sceneID="q8u-lp-CxT">
@@ -423,13 +423,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Draw a ruby! " translatesAutoresizingMaskIntoConstraints="NO" id="GDU-Cw-z3b">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="98" y="472" width="179" height="36"/>
+                                    <rect key="frame" x="56" y="498" width="263" height="52"/>
                                 </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="to view the story" translatesAutoresizingMaskIntoConstraints="NO" id="A3I-YR-M6b">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="68" y="516" width="239" height="36"/>
+                                    <rect key="frame" x="68" y="558" width="239" height="36"/>
                                 </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QY-jM-qu3">
@@ -475,12 +475,12 @@
                     <navigationItem key="navigationItem" title="ruby" prompt="ruby" id="wKE-xO-IbS"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="27K-jF-ekG" kind="show" identifier="next" id="kQv-LC-o8C"/>
+                        <segue destination="umo-Ih-Ooa" kind="show" identifier="next" id="NE8-Ic-Gcw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I68-Cc-BdY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038.75" y="-129.5"/>
+            <point key="canvasLocation" x="-293.25" y="-150.5"/>
         </scene>
         <!--Draw View Controller-->
         <scene sceneID="PMY-pn-ylW">
@@ -501,7 +501,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aUn-qQ-XcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031.25" y="465"/>
+            <point key="canvasLocation" x="-293.25" y="381"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EaQ-CF-whI">
@@ -540,7 +540,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oxh-RE-BkD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="105.75" y="859"/>
+            <point key="canvasLocation" x="413.25" y="745"/>
         </scene>
         <!--house-->
         <scene sceneID="ZMY-7p-33V">
@@ -578,13 +578,25 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="to view my home!" translatesAutoresizingMaskIntoConstraints="NO" id="9QS-Ze-0OL">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="58" y="534" width="259" height="36"/>
+                                    <rect key="frame" x="58" y="559" width="259" height="36"/>
                                 </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Draw a house! " translatesAutoresizingMaskIntoConstraints="NO" id="9eM-Km-9UH">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="39" y="113" width="297" height="41"/>
+                                    <rect key="frame" x="39" y="491" width="297" height="41"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="I live in" translatesAutoresizingMaskIntoConstraints="NO" id="clz-Sa-SEi">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="139" y="61" width="97" height="29"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Quito, Ecuador" translatesAutoresizingMaskIntoConstraints="NO" id="q0l-Rg-zmo">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="108" width="314" height="47"/>
                                 </variation>
                             </imageView>
                         </subviews>
@@ -597,6 +609,8 @@
                                 <exclude reference="tYI-kv-Wyb"/>
                                 <exclude reference="9QS-Ze-0OL"/>
                                 <exclude reference="9eM-Km-9UH"/>
+                                <exclude reference="clz-Sa-SEi"/>
+                                <exclude reference="q0l-Rg-zmo"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -606,18 +620,20 @@
                                 <include reference="tYI-kv-Wyb"/>
                                 <include reference="9QS-Ze-0OL"/>
                                 <include reference="9eM-Km-9UH"/>
+                                <include reference="clz-Sa-SEi"/>
+                                <include reference="q0l-Rg-zmo"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="house" id="rFJ-7P-ENG"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="izB-WC-eTJ" kind="show" identifier="next" id="fGw-Xp-R8S"/>
+                        <segue destination="27K-jF-ekG" kind="show" identifier="next" id="gYe-u3-pe4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cXt-1h-2yk" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.75" y="-177.5"/>
+            <point key="canvasLocation" x="293.25" y="-150.5"/>
         </scene>
         <!--Draw View Controller-->
         <scene sceneID="v0X-NZ-91R">
@@ -638,7 +654,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1m-hO-s0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122.25" y="428"/>
+            <point key="canvasLocation" x="402.75" y="381"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="I5x-g8-3va">
@@ -677,7 +693,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syt-Nk-WQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="938"/>
+            <point key="canvasLocation" x="-293.25" y="740"/>
         </scene>
         <!--Swipe View Controller-->
         <scene sceneID="4I1-hn-yNj">
@@ -712,25 +728,27 @@
                     </view>
                     <toolbarItems/>
                     <connections>
-                        <segue destination="umo-Ih-Ooa" kind="show" identifier="next" id="6d4-g5-o2X"/>
+                        <segue destination="izB-WC-eTJ" kind="show" identifier="next" id="oEX-sp-T3d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewf-LC-0eI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-816.75" y="325.5"/>
+            <point key="canvasLocation" x="-1014.75" y="309.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="&lt;&lt;  or swipe to cont" width="250" height="22"/>
         <image name="Color the world! -1" width="229" height="29"/>
         <image name="Draw a house! " width="297" height="41"/>
-        <image name="Draw a ruby! " width="179" height="36"/>
+        <image name="Draw a ruby! " width="263" height="52"/>
         <image name="Enjoy a tune! " width="268" height="50"/>
         <image name="I got my first MacBo" width="260" height="101"/>
+        <image name="I live in" width="97" height="29"/>
         <image name="I love music" width="171" height="29"/>
         <image name="It al started when " width="247" height="29"/>
         <image name="My first job was" width="228" height="36"/>
         <image name="Press the keys to" width="243" height="36"/>
+        <image name="Quito, Ecuador" width="314" height="47"/>
         <image name="RubyDismiss" width="375" height="666"/>
         <image name="Swipe the white area" width="290" height="35"/>
         <image name="Web Development" width="324" height="41"/>
