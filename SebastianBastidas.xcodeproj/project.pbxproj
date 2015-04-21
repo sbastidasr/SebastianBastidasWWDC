@@ -11,6 +11,7 @@
 		EA0F494F1AE54ACF0020B086 /* ruby.svg in Resources */ = {isa = PBXBuildFile; fileRef = EA0F494E1AE54ACF0020B086 /* ruby.svg */; };
 		EA2C1FF01AE5CECF00D0DC7B /* color-small.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2C1FEE1AE5CECF00D0DC7B /* color-small.png */; };
 		EA2C1FF11AE5CECF00D0DC7B /* colored-small.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2C1FEF1AE5CECF00D0DC7B /* colored-small.png */; };
+		EA2C1FF41AE6A55100D0DC7B /* DismissViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2C1FF31AE6A55100D0DC7B /* DismissViewController.m */; };
 		EA3A34AB1AE40A4A0042FB88 /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3A34AA1AE40A4A0042FB88 /* SwipeViewController.m */; };
 		EA3A34B21AE418010042FB88 /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3A34AD1AE418010042FB88 /* DrawViewController.m */; };
 		EA3A34B31AE418010042FB88 /* WTMGlyphDetectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3A34AF1AE418010042FB88 /* WTMGlyphDetectorView.m */; };
@@ -118,6 +119,8 @@
 		EA0F494E1AE54ACF0020B086 /* ruby.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ruby.svg; sourceTree = "<group>"; };
 		EA2C1FEE1AE5CECF00D0DC7B /* color-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-small.png"; sourceTree = "<group>"; };
 		EA2C1FEF1AE5CECF00D0DC7B /* colored-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "colored-small.png"; sourceTree = "<group>"; };
+		EA2C1FF21AE6A55100D0DC7B /* DismissViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissViewController.h; sourceTree = "<group>"; };
+		EA2C1FF31AE6A55100D0DC7B /* DismissViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissViewController.m; sourceTree = "<group>"; };
 		EA3A34A91AE40A4A0042FB88 /* SwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeViewController.h; sourceTree = "<group>"; };
 		EA3A34AA1AE40A4A0042FB88 /* SwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeViewController.m; sourceTree = "<group>"; };
 		EA3A34AC1AE418000042FB88 /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
@@ -261,6 +264,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA2C1FF51AE6A84100D0DC7B /* Erase */ = {
+			isa = PBXGroup;
+			children = (
+				EA76F5F81AE5A9CA00AAD496 /* EraseViewController.h */,
+				EA76F5F91AE5A9CA00AAD496 /* EraseViewController.m */,
+				EA76F5F51AE5A8DB00AAD496 /* EraseImageView.h */,
+				EA76F5F61AE5A8DB00AAD496 /* EraseImageView.m */,
+			);
+			name = Erase;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		EA3A34B91AE418990042FB88 /* WTMGlyph */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,10 +399,6 @@
 		EA486FDB1AE1D957002A5A3D = {
 			isa = PBXGroup;
 			children = (
-				EA76F5F81AE5A9CA00AAD496 /* EraseViewController.h */,
-				EA76F5F91AE5A9CA00AAD496 /* EraseViewController.m */,
-				EA76F5F51AE5A8DB00AAD496 /* EraseImageView.h */,
-				EA76F5F61AE5A8DB00AAD496 /* EraseImageView.m */,
 				EA486FE61AE1D957002A5A3D /* SebastianBastidas */,
 				EA4870001AE1D958002A5A3D /* SebastianBastidasTests */,
 				EA486FE51AE1D957002A5A3D /* Products */,
@@ -406,20 +417,20 @@
 		EA486FE61AE1D957002A5A3D /* SebastianBastidas */ = {
 			isa = PBXGroup;
 			children = (
-				EA3A35001AE422D80042FB88 /* gestures */,
+				EA486FF11AE1D958002A5A3D /* Main.storyboard */,
+				EA2C1FF51AE6A84100D0DC7B /* Erase */,
 				EA4870181AE1DF55002A5A3D /* Piano.swift */,
 				EA486FEB1AE1D957002A5A3D /* AppDelegate.h */,
 				EA486FEC1AE1D957002A5A3D /* AppDelegate.m */,
 				EA4870161AE1DE61002A5A3D /* PianoViewController.swift */,
-				EA486FF11AE1D958002A5A3D /* Main.storyboard */,
+				EA2C1FF21AE6A55100D0DC7B /* DismissViewController.h */,
+				EA2C1FF31AE6A55100D0DC7B /* DismissViewController.m */,
 				EA3A34A91AE40A4A0042FB88 /* SwipeViewController.h */,
 				EA3A34AA1AE40A4A0042FB88 /* SwipeViewController.m */,
 				EA486FF41AE1D958002A5A3D /* Images.xcassets */,
 				EA486FF61AE1D958002A5A3D /* LaunchScreen.xib */,
 				EA3A34AC1AE418000042FB88 /* DrawViewController.h */,
 				EA3A34AD1AE418010042FB88 /* DrawViewController.m */,
-				EA3A34AE1AE418010042FB88 /* WTMGlyphDetectorView.h */,
-				EA3A34AF1AE418010042FB88 /* WTMGlyphDetectorView.m */,
 				EA486FE71AE1D957002A5A3D /* Supporting Files */,
 				EA4870131AE1DDA2002A5A3D /* SebastianBastidas-Bridging-Header.h */,
 			);
@@ -429,6 +440,9 @@
 		EA486FE71AE1D957002A5A3D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EA3A34AE1AE418010042FB88 /* WTMGlyphDetectorView.h */,
+				EA3A34AF1AE418010042FB88 /* WTMGlyphDetectorView.m */,
+				EA3A35001AE422D80042FB88 /* gestures */,
 				EA0F49401AE540660020B086 /* PocketSVG.h */,
 				EA0F49411AE540660020B086 /* PocketSVG.m */,
 				EA0F49431AE540840020B086 /* PocketSVG iOS Example-Bridging-Header.h */,
@@ -666,6 +680,7 @@
 				EA3A34F21AE418990042FB88 /* WTMGlyphDefaults.m in Sources */,
 				EA76F5FA1AE5A9CA00AAD496 /* EraseViewController.m in Sources */,
 				EA4870191AE1DF55002A5A3D /* Piano.swift in Sources */,
+				EA2C1FF41AE6A55100D0DC7B /* DismissViewController.m in Sources */,
 				EA486FED1AE1D957002A5A3D /* AppDelegate.m in Sources */,
 				EA0F49421AE540660020B086 /* PocketSVG.m in Sources */,
 				EA3A34F01AE418990042FB88 /* WTMDetectionResult.m in Sources */,

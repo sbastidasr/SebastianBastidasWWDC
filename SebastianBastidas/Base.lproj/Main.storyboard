@@ -267,22 +267,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="It al started when i" translatesAutoresizingMaskIntoConstraints="NO" id="EfX-Il-EUH">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="I got my first MacBo" translatesAutoresizingMaskIntoConstraints="NO" id="yM3-3M-1FN">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="31" y="467" width="321" height="78"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Swipe the white area" translatesAutoresizingMaskIntoConstraints="NO" id="ayl-K9-JVl">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="30" y="71" width="301" height="71"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Color the world! " translatesAutoresizingMaskIntoConstraints="NO" id="Zwj-56-eRq">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="150" width="335" height="41"/>
+                                    <rect key="frame" x="57" y="98" width="260" height="101"/>
                                 </variation>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kiO-UL-mwR">
@@ -294,44 +282,66 @@
                                     <segue destination="eVS-dx-xpb" kind="embed" id="esK-a9-Stp"/>
                                 </connections>
                             </containerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="It al started when " translatesAutoresizingMaskIntoConstraints="NO" id="EfX-Il-EUH">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="64" y="54" width="247" height="29"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Swipe the white area" translatesAutoresizingMaskIntoConstraints="NO" id="ayl-K9-JVl">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="42" y="495" width="290" height="35"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Color the world! -1" translatesAutoresizingMaskIntoConstraints="NO" id="sgZ-zN-Ku5">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="73" y="542" width="229" height="29"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="possibilities" translatesAutoresizingMaskIntoConstraints="NO" id="EIo-tU-nqZ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="496" width="323" height="71"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="yM3-3M-1FN"/>
+                                <exclude reference="kiO-UL-mwR"/>
                                 <exclude reference="EfX-Il-EUH"/>
                                 <exclude reference="ayl-K9-JVl"/>
-                                <exclude reference="Zwj-56-eRq"/>
-                                <exclude reference="kiO-UL-mwR"/>
+                                <exclude reference="sgZ-zN-Ku5"/>
+                                <exclude reference="EIo-tU-nqZ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="yM3-3M-1FN"/>
+                                <include reference="kiO-UL-mwR"/>
                                 <include reference="EfX-Il-EUH"/>
                                 <include reference="ayl-K9-JVl"/>
-                                <include reference="Zwj-56-eRq"/>
-                                <include reference="kiO-UL-mwR"/>
+                                <include reference="sgZ-zN-Ku5"/>
+                                <include reference="EIo-tU-nqZ"/>
                             </mask>
                         </variation>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Mwg-VU-QRq" appends="YES" id="N5w-7a-NQy"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="hn8-cs-qEy"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="label1" destination="EfX-Il-EUH" id="Nn3-0V-dsj"/>
-                        <segue destination="umo-Ih-Ooa" kind="show" identifier="next" id="xXV-4W-c4l"/>
+                        <outlet property="label1" destination="EIo-tU-nqZ" id="YGI-rU-KCD"/>
+                        <outlet property="label2" destination="ayl-K9-JVl" id="mZM-sK-KFf"/>
+                        <outlet property="label3" destination="EfX-Il-EUH" id="1lh-nV-3r4"/>
+                        <outlet property="label4" destination="sgZ-zN-Ku5" id="Y7c-6B-8OC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWl-FH-feS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer cancelsTouchesInView="NO" id="Mwg-VU-QRq">
-                    <connections>
-                        <action selector="screenTapped:" destination="qpd-wQ-p3J" id="teW-bZ-BKG"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-486.75" y="-177.5"/>
+            <point key="canvasLocation" x="-1386.75" y="-999.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jwL-03-d7R">
@@ -344,12 +354,60 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="qpd-wQ-p3J" kind="relationship" relationship="rootViewController" id="lHh-03-uxe"/>
+                        <segue destination="fcI-iQ-Fcp" kind="relationship" relationship="rootViewController" id="hQQ-g8-pOj"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfp-WB-Qpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1803" y="-169"/>
+        </scene>
+        <!--Dismiss View Controller-->
+        <scene sceneID="A8y-FY-BxZ">
+            <objects>
+                <viewController id="pcI-vb-51x" customClass="DismissViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ECh-pK-Dhz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Loi-7Q-K6q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OHW-3N-wxU">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RubyDismiss" translatesAutoresizingMaskIntoConstraints="NO" id="rUS-JO-Yhj">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="yet-OU-hKp" appends="YES" id="Twg-B4-Bft"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="rUS-JO-Yhj"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="rUS-JO-Yhj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="izB-WC-eTJ" kind="show" identifier="next" id="Wr6-7F-sj7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHD-oe-Qap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yet-OU-hKp">
+                    <connections>
+                        <action selector="dismissTapped:" destination="pcI-vb-51x" id="F0u-Wr-srW"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="882" y="-915"/>
         </scene>
         <!--ruby-->
         <scene sceneID="K1Y-AN-Gib">
@@ -378,16 +436,16 @@
                                     <segue destination="Jmh-f2-oQJ" kind="embed" identifier="embedSegue" id="OQF-dv-ZfR"/>
                                 </connections>
                             </containerView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Please," translatesAutoresizingMaskIntoConstraints="NO" id="gLw-vh-GHm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="My first job was" translatesAutoresizingMaskIntoConstraints="NO" id="gLw-vh-GHm">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="56" y="72" width="96" height="33"/>
+                                    <rect key="frame" x="73" y="59" width="228" height="36"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Draw a ruby! " translatesAutoresizingMaskIntoConstraints="NO" id="OPM-I7-9oM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Web Development" translatesAutoresizingMaskIntoConstraints="NO" id="OPM-I7-9oM">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="56" y="113" width="263" height="52"/>
+                                    <rect key="frame" x="25" y="103" width="324" height="41"/>
                                 </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="&lt;&lt;  or swipe to cont" translatesAutoresizingMaskIntoConstraints="NO" id="SeH-Ry-lLN">
@@ -396,10 +454,16 @@
                                     <rect key="frame" x="62" y="625" width="250" height="22"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="webDev" translatesAutoresizingMaskIntoConstraints="NO" id="GDU-Cw-z3b">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Draw a ruby! " translatesAutoresizingMaskIntoConstraints="NO" id="GDU-Cw-z3b">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="73" y="508" width="228" height="78"/>
+                                    <rect key="frame" x="98" y="472" width="179" height="36"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="to view the story" translatesAutoresizingMaskIntoConstraints="NO" id="A3I-YR-M6b">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="68" y="516" width="239" height="36"/>
                                 </variation>
                             </imageView>
                         </subviews>
@@ -413,6 +477,7 @@
                                 <exclude reference="OPM-I7-9oM"/>
                                 <exclude reference="SeH-Ry-lLN"/>
                                 <exclude reference="GDU-Cw-z3b"/>
+                                <exclude reference="A3I-YR-M6b"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -423,6 +488,7 @@
                                 <include reference="OPM-I7-9oM"/>
                                 <include reference="SeH-Ry-lLN"/>
                                 <include reference="GDU-Cw-z3b"/>
+                                <include reference="A3I-YR-M6b"/>
                             </mask>
                         </variation>
                     </view>
@@ -434,7 +500,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I68-Cc-BdY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="882.75" y="-177.5"/>
+            <point key="canvasLocation" x="750.75" y="-177.5"/>
         </scene>
         <!--Draw View Controller-->
         <scene sceneID="PMY-pn-ylW">
@@ -494,7 +560,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oxh-RE-BkD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="930"/>
+            <point key="canvasLocation" x="105.75" y="859"/>
         </scene>
         <!--house-->
         <scene sceneID="ZMY-7p-33V">
@@ -541,18 +607,6 @@
                                     <rect key="frame" x="39" y="113" width="297" height="41"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Please," translatesAutoresizingMaskIntoConstraints="NO" id="R0Q-mq-WXL">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="39" y="72" width="96" height="33"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A world of posibilit" translatesAutoresizingMaskIntoConstraints="NO" id="fft-j1-D9q">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-97" y="499" width="309" height="71"/>
-                                </variation>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -563,8 +617,6 @@
                                 <exclude reference="tYI-kv-Wyb"/>
                                 <exclude reference="9QS-Ze-0OL"/>
                                 <exclude reference="9eM-Km-9UH"/>
-                                <exclude reference="R0Q-mq-WXL"/>
-                                <exclude reference="fft-j1-D9q"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -574,15 +626,13 @@
                                 <include reference="tYI-kv-Wyb"/>
                                 <include reference="9QS-Ze-0OL"/>
                                 <include reference="9eM-Km-9UH"/>
-                                <include reference="R0Q-mq-WXL"/>
-                                <include reference="fft-j1-D9q"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="house" id="rFJ-7P-ENG"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="izB-WC-eTJ" kind="show" identifier="next" id="eEx-Ze-UTm"/>
+                        <segue destination="pcI-vb-51x" kind="show" identifier="next" id="7xM-SB-iJD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cXt-1h-2yk" sceneMemberID="firstResponder"/>
@@ -686,29 +736,79 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewf-LC-0eI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-486.75" y="305.5"/>
+            <point key="canvasLocation" x="-816.75" y="325.5"/>
+        </scene>
+        <!--Dismiss View Controller-->
+        <scene sceneID="8au-Rf-y0E">
+            <objects>
+                <viewController id="fcI-iQ-Fcp" customClass="DismissViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZNh-f9-VlI"/>
+                        <viewControllerLayoutGuide type="bottom" id="WKM-aF-NpK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="efH-rO-nsa">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ColorDismiss" translatesAutoresizingMaskIntoConstraints="NO" id="iPW-nh-N1C">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="FDK-yS-Ky7" appends="YES" id="2JJ-du-sth"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="iPW-nh-N1C"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="iPW-nh-N1C"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="bKb-2P-uqW"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="qpd-wQ-p3J" kind="show" identifier="next" id="PPb-FM-MV4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTM-WD-30O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="FDK-yS-Ky7">
+                    <connections>
+                        <action selector="dismissTapped:" destination="fcI-iQ-Fcp" id="Wsq-vW-P9V"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-816.75" y="-999.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="&lt;&lt;  or swipe to cont" width="250" height="22"/>
-        <image name="A world of posibilit" width="309" height="71"/>
-        <image name="Color the world! " width="335" height="41"/>
+        <image name="Color the world! -1" width="229" height="29"/>
+        <image name="ColorDismiss" width="375" height="666"/>
         <image name="Draw a house! " width="297" height="41"/>
-        <image name="Draw a ruby! " width="263" height="52"/>
+        <image name="Draw a ruby! " width="179" height="36"/>
         <image name="Enjoy a tune! " width="268" height="50"/>
+        <image name="I got my first MacBo" width="260" height="101"/>
         <image name="I love music" width="171" height="29"/>
-        <image name="It al started when i" width="321" height="78"/>
-        <image name="Please," width="96" height="33"/>
+        <image name="It al started when " width="247" height="29"/>
+        <image name="My first job was" width="228" height="36"/>
         <image name="Press the keys to" width="243" height="36"/>
-        <image name="Swipe the white area" width="301" height="71"/>
+        <image name="RubyDismiss" width="375" height="667"/>
+        <image name="Swipe the white area" width="290" height="35"/>
+        <image name="Web Development" width="324" height="41"/>
         <image name="black.jpg" width="40" height="140"/>
         <image name="house" width="165" height="151"/>
+        <image name="possibilities" width="323" height="71"/>
         <image name="ruby" width="190" height="153"/>
         <image name="to view my home!" width="259" height="36"/>
-        <image name="webDev" width="228" height="78"/>
+        <image name="to view the story" width="239" height="36"/>
         <image name="white.jpg" width="60" height="230"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="xXV-4W-c4l"/>
-    </inferredMetricsTieBreakers>
 </document>

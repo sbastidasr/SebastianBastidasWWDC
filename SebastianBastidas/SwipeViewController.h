@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SwipeViewController : UIViewController <UIGestureRecognizerDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *dismissImageView;
 
 @end
 

@@ -43,8 +43,8 @@ const CGPoint ruby = {-1.0f, -209.0f};
     return imagePoints;
 }
 -(NSDictionary *)imageColors{
-    return @{@"ruby":[UIColor redColor],
-                                  @"house":[UIColor colorWithRed:134.0f/255.0f green:189.0f/255.0f blue:199.0f/255.0f alpha:1.0f]
+    return @{@"ruby":[UIColor colorWithRed:237.0f/255.0f green:130.0f/255.0f blue:123.0f/255.0f alpha:1.0f],
+             @"house":[UIColor colorWithRed:134.0f/255.0f green:189.0f/255.0f blue:199.0f/255.0f alpha:1.0f]
                                   };
 }
 
@@ -108,7 +108,7 @@ const CGPoint ruby = {-1.0f, -209.0f};
     
     //3: Fiddle with it using CAShapeLayer's properties:
     pathLayer.strokeColor = [[self imageColors][self.title] CGColor];
-    pathLayer.lineWidth = 4;
+    pathLayer.lineWidth = 10;
     pathLayer.fillColor = [[UIColor clearColor] CGColor];
 
     pathLayer.position= [[self imagePoints][self.title]CGPointValue];

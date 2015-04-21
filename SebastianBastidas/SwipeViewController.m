@@ -26,6 +26,17 @@
     [self.view addGestureRecognizer:recognizerLeft];
 
     [self.navigationController setNavigationBarHidden:YES];
+    
+
+    
+    
+}
+
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    if(self.dismissImageView){
+        self.dismissImageView.alpha=0.0f;
+    }
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {

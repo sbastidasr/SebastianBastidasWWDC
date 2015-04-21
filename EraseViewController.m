@@ -11,7 +11,12 @@
 #import "SwipeViewController.h"
 
 @interface EraseViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *label3;
+
 @property (weak, nonatomic) IBOutlet UIImageView *label1;
+@property (weak, nonatomic) IBOutlet UIImageView *label2;
+@property (weak, nonatomic) IBOutlet UIImageView *label4;
+
 
 @end
 
@@ -20,9 +25,10 @@
   
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    
-    self.label1.alpha = 0.0f;
-    
+   //self.label3.alpha = 0.0f;
+   self.label1.alpha = 1.0f;
+    self.label4.alpha = 0.0f;
+    self.label2.alpha = 0.0f;
     
 }
 
