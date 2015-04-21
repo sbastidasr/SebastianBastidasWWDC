@@ -11,10 +11,20 @@
 #import "SwipeViewController.h"
 
 @interface EraseViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *label1;
 
 @end
 
 @implementation EraseViewController
+
+  
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    
+    self.label1.alpha = 0.0f;
+    
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

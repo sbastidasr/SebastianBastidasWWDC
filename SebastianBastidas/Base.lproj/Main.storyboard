@@ -296,6 +296,7 @@
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="EfX-Il-EUH"/>
@@ -312,14 +313,23 @@
                                 <include reference="kiO-UL-mwR"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Mwg-VU-QRq" appends="YES" id="N5w-7a-NQy"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="hn8-cs-qEy"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="label1" destination="EfX-Il-EUH" id="Nn3-0V-dsj"/>
                         <segue destination="umo-Ih-Ooa" kind="show" identifier="next" id="xXV-4W-c4l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWl-FH-feS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer cancelsTouchesInView="NO" id="Mwg-VU-QRq">
+                    <connections>
+                        <action selector="screenTapped:" destination="qpd-wQ-p3J" id="teW-bZ-BKG"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-486.75" y="-177.5"/>
         </scene>
@@ -699,6 +709,6 @@
         <image name="white.jpg" width="60" height="230"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6d4-g5-o2X"/>
+        <segue reference="xXV-4W-c4l"/>
     </inferredMetricsTieBreakers>
 </document>

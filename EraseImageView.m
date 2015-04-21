@@ -55,6 +55,8 @@
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    
+    
     UITouch *touch=(UITouch *)[touches anyObject];
     
     // the new line that will be drawn
