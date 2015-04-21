@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EA0F49421AE540660020B086 /* PocketSVG.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0F49411AE540660020B086 /* PocketSVG.m */; };
 		EA0F494F1AE54ACF0020B086 /* ruby.svg in Resources */ = {isa = PBXBuildFile; fileRef = EA0F494E1AE54ACF0020B086 /* ruby.svg */; };
+		EA2C1FF01AE5CECF00D0DC7B /* color-small.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2C1FEE1AE5CECF00D0DC7B /* color-small.png */; };
+		EA2C1FF11AE5CECF00D0DC7B /* colored-small.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2C1FEF1AE5CECF00D0DC7B /* colored-small.png */; };
 		EA3A34AB1AE40A4A0042FB88 /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3A34AA1AE40A4A0042FB88 /* SwipeViewController.m */; };
 		EA3A34B21AE418010042FB88 /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3A34AD1AE418010042FB88 /* DrawViewController.m */; };
 		EA3A34B31AE418010042FB88 /* WTMGlyphDetectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3A34AF1AE418010042FB88 /* WTMGlyphDetectorView.m */; };
@@ -114,6 +116,8 @@
 		EA0F49411AE540660020B086 /* PocketSVG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PocketSVG.m; sourceTree = "<group>"; };
 		EA0F49431AE540840020B086 /* PocketSVG iOS Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PocketSVG iOS Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		EA0F494E1AE54ACF0020B086 /* ruby.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ruby.svg; sourceTree = "<group>"; };
+		EA2C1FEE1AE5CECF00D0DC7B /* color-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-small.png"; sourceTree = "<group>"; };
+		EA2C1FEF1AE5CECF00D0DC7B /* colored-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "colored-small.png"; sourceTree = "<group>"; };
 		EA3A34A91AE40A4A0042FB88 /* SwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeViewController.h; sourceTree = "<group>"; };
 		EA3A34AA1AE40A4A0042FB88 /* SwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeViewController.m; sourceTree = "<group>"; };
 		EA3A34AC1AE418000042FB88 /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
@@ -460,6 +464,8 @@
 		EA4870201AE1E2D5002A5A3D /* image */ = {
 			isa = PBXGroup;
 			children = (
+				EA2C1FEE1AE5CECF00D0DC7B /* color-small.png */,
+				EA2C1FEF1AE5CECF00D0DC7B /* colored-small.png */,
 				EA76F6031AE5B0E300AAD496 /* computerWithWhite.png */,
 				EA76F6071AE5B2FA00AAD496 /* colored.png */,
 				EA76F6051AE5B1B800AAD496 /* color.png */,
@@ -608,6 +614,7 @@
 				EA3A35401AE44DB20042FB88 /* 4.json in Resources */,
 				EA76F6041AE5B0E300AAD496 /* computerWithWhite.png in Resources */,
 				EA48703A1AE1E31A002A5A3D /* D.mp3 in Resources */,
+				EA2C1FF01AE5CECF00D0DC7B /* color-small.png in Resources */,
 				EA486FF81AE1D958002A5A3D /* LaunchScreen.xib in Resources */,
 				EA3A35351AE422D80042FB88 /* U.json in Resources */,
 				EA3A35231AE422D80042FB88 /* E.json in Resources */,
@@ -620,6 +627,7 @@
 				EA76F5FE1AE5AAB000AAD496 /* 1.png in Resources */,
 				EA486FF51AE1D958002A5A3D /* Images.xcassets in Resources */,
 				EA48703D1AE1E31A002A5A3D /* F.mp3 in Resources */,
+				EA2C1FF11AE5CECF00D0DC7B /* colored-small.png in Resources */,
 				EA3A35371AE422D80042FB88 /* W.json in Resources */,
 				EA4870231AE1E2D5002A5A3D /* black.jpg in Resources */,
 				EA3A353A1AE422D80042FB88 /* Z.json in Resources */,
