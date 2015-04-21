@@ -47,6 +47,10 @@
     }
     return YES;
 }
+- (IBAction)dismissInfoButton:(UIButton *)sender {
+    sender.enabled=NO;
+    sender.hidden=YES;
+}
 
 //Method to handle event on swipe
 - (void) SwipeRecognizer:(UISwipeGestureRecognizer *)sender {

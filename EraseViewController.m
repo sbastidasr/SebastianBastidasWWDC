@@ -31,6 +31,10 @@
     self.label2.alpha = 0.0f;
     
 }
+- (IBAction)dismissInfoButtton:(UIButton *)sender {
+    sender.enabled=NO;
+    sender.hidden=YES;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
