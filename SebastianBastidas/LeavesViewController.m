@@ -116,20 +116,35 @@
       leaf17.fillColor= [[UIColor blueColor] CGColor];
     CAShapeLayer *leaf18 = leafArray[17];
     leaf18.position= CGPointMake(177, 170);
-    
-    
     CAShapeLayer *leaf19 = leafArray[18];
     leaf19.position= CGPointMake(142, 150);
     CAShapeLayer *leaf20 = leafArray[19];
     leaf20.position= CGPointMake(172, 119);
- 
-    
     CAShapeLayer *leaf21 = leafArray[20];
     leaf21.position= CGPointMake(152, 164);
+    CAShapeLayer *leaf22 = leafArray[21];
+    leaf22.position= CGPointMake(172, 155);
+    CAShapeLayer *leaf23 = leafArray[22];
+    leaf23.position=CGPointMake(157, 132);
+    CAShapeLayer *leaf24 = leafArray[23];
+    leaf24.position= CGPointMake(142, 150);
+    CAShapeLayer *leaf25 = leafArray[24];
+    leaf25.position= CGPointMake(137, 187);
+    CAShapeLayer *leaf26 = leafArray[25];
+    leaf26.position=CGPointMake(157, 102);
+    CAShapeLayer *leaf27 = leafArray[26];
+    leaf27.position= CGPointMake(137, 218);
+    CAShapeLayer *leaf28 = leafArray[27];
+    leaf28.position= CGPointMake(153, 218);
     
-    CAShapeLayer *leaf22 = leafArray[18];
-    leaf22.position= CGPointMake(142, 150);
-    leaf22.fillColor= [[UIColor greenColor] CGColor];
+    
+    CAShapeLayer *leaf29 = leafArray[28];
+    leaf29.position= CGPointMake(145, 244);
+    
+    CAShapeLayer *leaf30 = leafArray[29];
+    leaf30.position= CGPointMake(157, 238);
+    
+ leaf28.fillColor= [[UIColor greenColor] CGColor];
     
     
     for (int i = 0; i < 40; i++)
@@ -137,7 +152,7 @@
         [self.view.layer addSublayer:leafArray[i]];
     }
     
-    
+    /*
     
     CABasicAnimation *animation = [CABasicAnimation animation];
     animation.keyPath = @"position.y";
@@ -147,7 +162,7 @@
     
     [pathLayer addAnimation:animation forKey:@"basic"];
     
-    pathLayer.position = CGPointMake(50, 350);
+    pathLayer.position = CGPointMake(50, 350);*/
 }
 @end
 
