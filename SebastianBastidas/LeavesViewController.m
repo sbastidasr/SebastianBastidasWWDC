@@ -51,33 +51,37 @@
 
 -(void)drawLine
 {
-    // CGPathRef myPath = [PocketSVG pathFromSVGFileNamed:[self title]];
-    //1: Turn your SVG into a CGPath:
+    //creation
     CGPathRef myPath = [PocketSVG pathFromSVGFileNamed:@"leaf"];
-    
-    //2: To display it on screen, you can create a CAShapeLayer
-    //and set myPath as its path property:
     CAShapeLayer *pathLayer = [CAShapeLayer layer];
     pathLayer.path = myPath;
-    
-    
-    //pathLayer.frame = self.view.bounds;
-    UIViewController *drawArea = self.childViewControllers.firstObject;
-    pathLayer.frame = drawArea.view.bounds;
-    
-    
-    //3: Fiddle with it using CAShapeLayer's properties:
+ 
     pathLayer.strokeColor = [[self imageColors][@"ruby"] CGColor];
     pathLayer.lineWidth = 10;
     pathLayer.fillColor = [[UIColor clearColor] CGColor];
+   
     
+    //Position
     pathLayer.position= CGPointMake(50, 200);
-    
-    
     pathLayer.transform = CATransform3DMakeScale(0.2, 0.2, 0.2);
     
-    //4: Display it!
+    //displaying
     [self.view.layer addSublayer:pathLayer];
+    
+    NSMutableArray *leafArray = [[NSMutableArray alloc]init];
+    
+    for (int i = 0; i < 20; i++)
+    {
+        
+        CAShapeLayer *pathLayerCopies = [NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:pathLayer]];
+        [leafArray addObject:pathLayerCopies];
+    }
+    
+    for (int i = 0; i < 20; i++)
+    {
+        pathLayer.position= CGPointMake(50+(i*10), 200);
+        [self.view.layer addSublayer:leafArray[i]];
+    }
     
     
     /*
