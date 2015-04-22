@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7Ar-6a-7kH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7Wa-0q-bhL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="r3e-5x-RH6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qIW-oE-9oT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="treeBranches" translatesAutoresizingMaskIntoConstraints="NO" id="aWe-nm-92e">
@@ -33,16 +34,16 @@
                                     <rect key="frame" x="69" y="495" width="237" height="112"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="&lt;&lt;  or swipe to cont" translatesAutoresizingMaskIntoConstraints="NO" id="gYP-MV-7XN">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="349" y="608" width="250" height="22"/>
-                                </variation>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="I have experience in" translatesAutoresizingMaskIntoConstraints="NO" id="78o-oo-nLj">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="316" y="42" width="283" height="36"/>
+                                    <rect key="frame" x="46" y="37" width="283" height="36"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="&lt;&lt;  or swipe to cont" translatesAutoresizingMaskIntoConstraints="NO" id="gYP-MV-7XN">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="62" y="615" width="250" height="22"/>
                                 </variation>
                             </imageView>
                         </subviews>
@@ -53,8 +54,8 @@
                                 <exclude reference="aWe-nm-92e"/>
                                 <exclude reference="w1R-Ru-rpK"/>
                                 <exclude reference="7Mo-Cu-Faq"/>
-                                <exclude reference="gYP-MV-7XN"/>
                                 <exclude reference="78o-oo-nLj"/>
+                                <exclude reference="gYP-MV-7XN"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -62,8 +63,8 @@
                                 <include reference="aWe-nm-92e"/>
                                 <include reference="w1R-Ru-rpK"/>
                                 <include reference="7Mo-Cu-Faq"/>
-                                <include reference="gYP-MV-7XN"/>
                                 <include reference="78o-oo-nLj"/>
+                                <include reference="gYP-MV-7XN"/>
                             </mask>
                         </variation>
                     </view>
@@ -71,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="neD-Mh-xIC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1536.75" y="-150.5"/>
+            <point key="canvasLocation" x="1700.25" y="-150.5"/>
         </scene>
         <!--Piano View Controller-->
         <scene sceneID="yes-xx-R8T">
@@ -319,6 +320,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <segue destination="7Ar-6a-7kH" kind="show" identifier="next" id="Jo6-MK-ijL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OP2-ji-t85" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -587,7 +591,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIk-JL-wBL">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="171" y="260" width="44" height="21"/>
@@ -611,13 +615,23 @@
             </objects>
             <point key="canvasLocation" x="413.25" y="745"/>
         </scene>
-        <!--Intro Pages-->
-        <scene sceneID="UdD-NI-2bi">
+        <!--View Controller-->
+        <scene sceneID="tXg-d2-fS6">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="sJz-tM-mAb" customClass="IntroPages" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="183-0A-hxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="ixV-Px-YYL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rm8-t7-4T2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bv2-o3-aw0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5WJ-7y-8Cd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UaV-fW-O9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1719" y="818"/>
+            <point key="canvasLocation" x="-1279.5" y="-1660"/>
         </scene>
         <!--house-->
         <scene sceneID="ZMY-7p-33V">
@@ -733,22 +747,22 @@
             </objects>
             <point key="canvasLocation" x="402.75" y="381"/>
         </scene>
-        <!--View Controller-->
+        <!--Pages View Controller-->
         <scene sceneID="I5x-g8-3va">
             <objects>
-                <viewController id="K1g-Qx-Vv0" sceneMemberID="viewController">
+                <viewController id="K1g-Qx-Vv0" customClass="PagesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NZf-yV-mDy"/>
                         <viewControllerLayoutGuide type="bottom" id="1VT-tf-NYH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vqY-Ua-qnd">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O00-zw-5qL">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="171" y="260" width="44" height="21"/>
@@ -767,10 +781,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syt-Nk-WQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-293.25" y="740"/>
+            <point key="canvasLocation" x="-314.25" y="1013.5"/>
         </scene>
         <!--Swipe View Controller-->
         <scene sceneID="4I1-hn-yNj">

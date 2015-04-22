@@ -6,9 +6,9 @@
 //
 //
 
-#import "IntroPages.h"
+#import "PagesViewController.h"
 
-@implementation IntroPages
+@implementation PagesViewController
 {
     NSArray *myViewControllers;
 }
@@ -17,6 +17,9 @@
 {
     [super viewDidLoad];
     
+     [self.navigationController setNavigationBarHidden:NO];
+    
+    /*
     self.delegate = self;
     self.dataSource = self;
     
@@ -37,7 +40,7 @@
                    direction:UIPageViewControllerNavigationDirectionForward
                     animated:NO completion:nil];
     
-    NSLog(@"loaded!");
+    NSLog(@"loaded!");*/
 }
 
 -(UIViewController *)viewControllerAtIndex:(NSUInteger)index

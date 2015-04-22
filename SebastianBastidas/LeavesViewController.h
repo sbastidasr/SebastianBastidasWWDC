@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LeavesViewController : UIViewController
+
+@interface LeavesViewController : SwipeViewController <CAAction>
 
 @end

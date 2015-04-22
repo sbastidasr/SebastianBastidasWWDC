@@ -17,12 +17,74 @@
 #import "LeavesViewController.h"
 
 @interface LeavesViewController ()
-
+@property(nonatomic,strong) NSMutableArray *leafArray;
 
 @end
 
 @implementation LeavesViewController
 
+-(NSMutableArray *)leafArray{
+    if(!_leafArray)
+        _leafArray = [[NSMutableArray alloc]init];
+    return _leafArray;
+}
+
+
+#pragma mark - Shake Functions
+
+-(BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:NO];
+    [self becomeFirstResponder];
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:NO];
+}
+
+-(void)viewDidDisappear:(BOOL)animated {
+    [self resignFirstResponder];
+    [super viewDidDisappear:NO];
+}
+
+-(void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (motion == UIEventSubtypeMotionShake )
+    {
+        for (int i = 0; i < 78; i++)
+        {
+            CAShapeLayer *leaf;
+            leaf = self.leafArray[i];
+            CABasicAnimation *animation = [CABasicAnimation animation];
+            animation.keyPath = @"position.y";
+            animation.fromValue = [NSNumber numberWithDouble:(leaf.position.y)];
+            animation.toValue = @380;
+            animation.delegate = self;
+            
+            //Random time value
+            float lowerBound = 1.0;
+            float upperBound = 4.0;
+            float rndValue=lowerBound + ((float)arc4random() / UINT32_MAX) * (upperBound - lowerBound);
+            
+            animation.duration = rndValue;
+            animation.timingFunction = [CAMediaTimingFunction functionWithName: kCAMediaTimingFunctionEaseOut];
+            [animation setValue:leaf forKey:@"animationLayer"];
+            [leaf addAnimation:animation forKey:@"basic"];
+        }
+    }
+}
+-(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
+    CALayer *layer = [anim valueForKey:@"animationLayer"];
+    if (layer) {
+        NSLog(@"removed %@ (%@) from superview", layer, [layer name]);
+       //    layer.position = CGPointMake(layer.position.x , 380);
+       [layer removeFromSuperlayer];
+
+    }
+}
 
 
 - (void)viewDidLoad{
@@ -44,11 +106,6 @@
 }
 
 
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-
-}
-
 -(void)drawLine
 {
     //creation
@@ -63,182 +120,181 @@
 
     //Position
     pathLayer.transform = CATransform3DMakeScale(0.2, 0.2, 0.2);
-    NSMutableArray *leafArray = [[NSMutableArray alloc]init];
     
     for (int i = 0; i < 78; i++)
     {
         
         CAShapeLayer *pathLayerCopies = [NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:pathLayer]];
-        [leafArray addObject:pathLayerCopies];
+        [self.leafArray addObject:pathLayerCopies];
     }
     
-    CAShapeLayer *leaf = leafArray[0];
+    CAShapeLayer *leaf = self.leafArray[0];
     leaf.position= CGPointMake(33, 180);
-    leaf = leafArray[1];
+    leaf = self.leafArray[1];
     leaf.position= CGPointMake(80, 168);
-    leaf = leafArray[2];
+    leaf = self.leafArray[2];
     leaf.position= CGPointMake(56, 176);
-    leaf = leafArray[3];
+    leaf = self.leafArray[3];
     leaf.position= CGPointMake(67, 148);
-    leaf = leafArray[4];
+    leaf = self.leafArray[4];
     leaf.position= CGPointMake(47, 152);
-    leaf = leafArray[5];
+    leaf = self.leafArray[5];
     leaf.position= CGPointMake(85, 142);
-    leaf = leafArray[6];
+    leaf = self.leafArray[6];
     leaf.position= CGPointMake(90, 162);
-    leaf = leafArray[7];
+    leaf = self.leafArray[7];
     leaf.position=  CGPointMake(120, 167);
-    leaf = leafArray[8];
+    leaf = self.leafArray[8];
     leaf.position=CGPointMake(130, 122);
-    leaf = leafArray[9];
+    leaf = self.leafArray[9];
     leaf.position= CGPointMake(105, 132);
-    leaf = leafArray[10];
+    leaf = self.leafArray[10];
     leaf.position= CGPointMake(130, 102);
-    leaf = leafArray[11];
+    leaf = self.leafArray[11];
     leaf.position= CGPointMake(137, 85);
-    leaf = leafArray[12];
+    leaf = self.leafArray[12];
     leaf.position= CGPointMake(117, 89);
-    leaf = leafArray[13];
+    leaf = self.leafArray[13];
     leaf.position= CGPointMake(100, 100);
-    leaf = leafArray[14];
+    leaf = self.leafArray[14];
     leaf.position= CGPointMake(80, 115);
-    leaf = leafArray[15];
+    leaf = self.leafArray[15];
     leaf.position= CGPointMake(193, 173);
-    leaf = leafArray[16];
+    leaf = self.leafArray[16];
     leaf.position= CGPointMake(195, 190);
-    leaf = leafArray[17];
+    leaf = self.leafArray[17];
     leaf.position= CGPointMake(177, 170);
-    leaf = leafArray[18];
+    leaf = self.leafArray[18];
     leaf.position= CGPointMake(142, 150);
-    leaf = leafArray[19];
+    leaf = self.leafArray[19];
     leaf.position= CGPointMake(172, 119);
     
-    leaf = leafArray[20];
+    leaf = self.leafArray[20];
     leaf.position= CGPointMake(152, 164);
-    leaf = leafArray[21];
+    leaf = self.leafArray[21];
     leaf.position= CGPointMake(172, 155);
-    leaf = leafArray[22];
+    leaf = self.leafArray[22];
     leaf.position=CGPointMake(157, 132);
-    leaf = leafArray[23];
+    leaf = self.leafArray[23];
     leaf.position= CGPointMake(142, 150);
-    leaf = leafArray[24];
+    leaf = self.leafArray[24];
     leaf.position= CGPointMake(137, 187);
-    leaf = leafArray[25];
+    leaf = self.leafArray[25];
     leaf.position=CGPointMake(157, 102);
-    leaf = leafArray[26];
+    leaf = self.leafArray[26];
     leaf.position= CGPointMake(137, 218);
-    leaf = leafArray[27];
+    leaf = self.leafArray[27];
     leaf.position= CGPointMake(153, 218);
-    leaf = leafArray[28];
+    leaf = self.leafArray[28];
     leaf.position= CGPointMake(145, 244);
-    leaf = leafArray[29];
+    leaf = self.leafArray[29];
     leaf.position= CGPointMake(157, 238);
-    leaf = leafArray[30];
+    leaf = self.leafArray[30];
     leaf.position= CGPointMake(122, 238);
-    leaf = leafArray[31];
+    leaf = self.leafArray[31];
     leaf.position= CGPointMake(102, 230);
-    leaf = leafArray[32];
+    leaf = self.leafArray[32];
     leaf.position= CGPointMake(115, 212);
-    leaf = leafArray[33];
+    leaf = self.leafArray[33];
     leaf.position= CGPointMake(95, 185);
-    leaf = leafArray[34];
+    leaf = self.leafArray[34];
     leaf.position= CGPointMake(90, 215);
-    leaf = leafArray[35];
+    leaf = self.leafArray[35];
     leaf.position= CGPointMake(65, 210);
-    leaf = leafArray[36];
+    leaf = self.leafArray[36];
     leaf.position= CGPointMake(78, 193);
-    leaf = leafArray[37];
+    leaf = self.leafArray[37];
     leaf.position= CGPointMake(38, 213);
-    leaf = leafArray[38];
+    leaf = self.leafArray[38];
     leaf.position= CGPointMake(68, 228);
-    leaf = leafArray[39];
+    leaf = self.leafArray[39];
     leaf.position= CGPointMake(65, 258);
     
-    leaf = leafArray[40];
+    leaf = self.leafArray[40];
     leaf.position= CGPointMake(45, 260);
-    leaf = leafArray[41];
+    leaf = self.leafArray[41];
     leaf.position= CGPointMake(35, 240);
-    leaf = leafArray[42];
+    leaf = self.leafArray[42];
     leaf.position= CGPointMake(30, 263);
-    leaf = leafArray[43];
+    leaf = self.leafArray[43];
     leaf.position= CGPointMake(50, 280);
-    leaf = leafArray[44];
+    leaf = self.leafArray[44];
     leaf.position= CGPointMake(71, 275);
-    leaf = leafArray[45];
+    leaf = self.leafArray[45];
     leaf.position= CGPointMake(110, 267);
-    leaf = leafArray[46];
+    leaf = self.leafArray[46];
     leaf.position= CGPointMake(130, 267);
-    leaf = leafArray[47];
+    leaf = self.leafArray[47];
     leaf.position= CGPointMake(78, 247);
-    leaf = leafArray[48];
+    leaf = self.leafArray[48];
     leaf.position= CGPointMake(95, 247);
-    leaf = leafArray[49];
+    leaf = self.leafArray[49];
     leaf.position= CGPointMake(190, 252);
-    leaf = leafArray[50];
+    leaf = self.leafArray[50];
     leaf.position= CGPointMake(183, 270);
-    leaf = leafArray[51];
+    leaf = self.leafArray[51];
     leaf.position= CGPointMake(195, 238);
-    leaf = leafArray[52];
+    leaf = self.leafArray[52];
     leaf.position= CGPointMake(213, 207);
-    leaf = leafArray[53];
+    leaf = self.leafArray[53];
     leaf.position= CGPointMake(213, 225);
-    leaf = leafArray[54];
+    leaf = self.leafArray[54];
     leaf.position= CGPointMake(210, 250);
-    leaf = leafArray[55];
+    leaf = self.leafArray[55];
     leaf.position= CGPointMake(228, 248);
-    leaf = leafArray[56];
+    leaf = self.leafArray[56];
     leaf.position= CGPointMake(247, 242);
-    leaf = leafArray[57];
+    leaf = self.leafArray[57];
     leaf.position= CGPointMake(244, 220);
-    leaf = leafArray[58];
+    leaf = self.leafArray[58];
     leaf.position= CGPointMake(264, 230);
-    leaf = leafArray[59];
+    leaf = self.leafArray[59];
     leaf.position= CGPointMake(280, 230);
     
-    leaf = leafArray[60];
+    leaf = self.leafArray[60];
     leaf.position= CGPointMake(274, 180);
-    leaf = leafArray[61];
+    leaf = self.leafArray[61];
     leaf.position= CGPointMake(254, 170);
-    leaf = leafArray[62];
+    leaf = self.leafArray[62];
     leaf.position= CGPointMake (254, 200);
-    leaf = leafArray[63];
+    leaf = self.leafArray[63];
     leaf.position= CGPointMake(234, 190);
-    leaf = leafArray[64];
+    leaf = self.leafArray[64];
     leaf.position= CGPointMake(230, 156);
-    leaf = leafArray[65];
+    leaf = self.leafArray[65];
     leaf.position= CGPointMake(230, 174);
-    leaf = leafArray[66];
+    leaf = self.leafArray[66];
     leaf.position= CGPointMake(230, 128);
-    leaf = leafArray[67];
+    leaf = self.leafArray[67];
     leaf.position= CGPointMake(250, 142);
-    leaf = leafArray[68];
+    leaf = self.leafArray[68];
     leaf.position= CGPointMake(214, 128);
-    leaf = leafArray[69];
+    leaf = self.leafArray[69];
     leaf.position= CGPointMake(214, 102);
    
     
-    leaf = leafArray[70];
+    leaf = self.leafArray[70];
     leaf.position= CGPointMake(190, 96);
-    leaf = leafArray[71];
+    leaf = self.leafArray[71];
     leaf.position= CGPointMake(200, 116);
-    leaf = leafArray[72];
+    leaf = self.leafArray[72];
     leaf.position= CGPointMake(207, 156);
-    leaf = leafArray[73];
+    leaf = self.leafArray[73];
     leaf.position= CGPointMake(186, 147);
-    leaf = leafArray[74];
+    leaf = self.leafArray[74];
     leaf.position= CGPointMake(170, 188);
 
-    leaf = leafArray[75];
+    leaf = self.leafArray[75];
     leaf.position= CGPointMake(154, 198);
-    leaf = leafArray[76];
+    leaf = self.leafArray[76];
     leaf.position= CGPointMake(184, 218);
 
-    leaf = leafArray[77];
+    leaf = self.leafArray[77];
     leaf.position= CGPointMake(174, 240);
     
     for (int i = 0; i < 78; i++)
     {
-        [self.view.layer addSublayer:leafArray[i]];
+        [self.view.layer addSublayer:self.leafArray[i]];
     }
     /*
     CABasicAnimation *animation = [CABasicAnimation animation];
@@ -247,29 +303,7 @@
     animation.toValue = @350;
     animation.duration = 2;
     */
-    for (int i = 0; i < 78; i++)
-    {
-        leaf = leafArray[i];
-        CABasicAnimation *animation = [CABasicAnimation animation];
-        animation.keyPath = @"position";
-        animation.fromValue = [NSNumber numberWithDouble:(leaf.position.y)];
-        animation.toValue = @380;
-        
-        //Random time value
-        float lowerBound = 1.0;
-        float upperBound = 4.0;
-       float rndValue=lowerBound + ((float)arc4random() / UINT32_MAX) * (upperBound - lowerBound);
-        
-        animation.duration = rndValue;
-        animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-
-        
-        [leaf addAnimation:animation forKey:@"shake"];
-     
-       leaf.position = CGPointMake(leaf.position.x , 380);
-        
-    }
-
+    
     
     
  
