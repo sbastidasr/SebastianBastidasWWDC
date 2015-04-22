@@ -70,23 +70,19 @@
     
     NSMutableArray *leafArray = [[NSMutableArray alloc]init];
     
-    for (int i = 0; i < 50; i++)
+    for (int i = 0; i < 78; i++)
     {
         
         CAShapeLayer *pathLayerCopies = [NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:pathLayer]];
         [leafArray addObject:pathLayerCopies];
     }
     
-    
-        //DefinitiveOnes
     CAShapeLayer *leaf = leafArray[0];
     leaf.position= CGPointMake(33, 180);
-    
     leaf = leafArray[1];
     leaf.position= CGPointMake(80, 168);
     leaf = leafArray[2];
     leaf.position= CGPointMake(56, 176);
-    
     leaf = leafArray[3];
     leaf.position= CGPointMake(67, 148);
     leaf = leafArray[4];
@@ -115,13 +111,13 @@
     leaf.position= CGPointMake(193, 173);
     leaf = leafArray[16];
     leaf.position= CGPointMake(195, 190);
-    leaf.fillColor= [[UIColor blueColor] CGColor];
     leaf = leafArray[17];
     leaf.position= CGPointMake(177, 170);
     leaf = leafArray[18];
     leaf.position= CGPointMake(142, 150);
     leaf = leafArray[19];
     leaf.position= CGPointMake(172, 119);
+    
     leaf = leafArray[20];
     leaf.position= CGPointMake(152, 164);
     leaf = leafArray[21];
@@ -162,6 +158,7 @@
     leaf.position= CGPointMake(68, 228);
     leaf = leafArray[39];
     leaf.position= CGPointMake(65, 258);
+    
     leaf = leafArray[40];
     leaf.position= CGPointMake(45, 260);
     leaf = leafArray[41];
@@ -176,29 +173,86 @@
     leaf.position= CGPointMake(110, 267);
     leaf = leafArray[46];
     leaf.position= CGPointMake(130, 267);
-  
     leaf = leafArray[47];
     leaf.position= CGPointMake(78, 247);
-   
     leaf = leafArray[48];
     leaf.position= CGPointMake(95, 247);
-    leaf.fillColor= [[UIColor greenColor] CGColor];
     leaf = leafArray[49];
-    leaf.position= CGPointMake(172, 119);
+    leaf.position= CGPointMake(190, 252);
+    leaf = leafArray[50];
+    leaf.position= CGPointMake(183, 270);
+    leaf = leafArray[51];
+    leaf.position= CGPointMake(195, 238);
+    leaf = leafArray[52];
+    leaf.position= CGPointMake(213, 207);
+    leaf = leafArray[53];
+    leaf.position= CGPointMake(213, 225);
+    leaf = leafArray[54];
+    leaf.position= CGPointMake(210, 250);
+    leaf = leafArray[55];
+    leaf.position= CGPointMake(228, 248);
+    leaf = leafArray[56];
+    leaf.position= CGPointMake(247, 242);
+    leaf = leafArray[57];
+    leaf.position= CGPointMake(244, 220);
+    leaf = leafArray[58];
+    leaf.position= CGPointMake(264, 230);
+    leaf = leafArray[59];
+    leaf.position= CGPointMake(280, 230);
     
+    leaf = leafArray[60];
+    leaf.position= CGPointMake(274, 180);
+    leaf = leafArray[61];
+    leaf.position= CGPointMake(254, 170);
+    leaf = leafArray[62];
+    leaf.position= CGPointMake (254, 200);
+    leaf = leafArray[63];
+    leaf.position= CGPointMake(234, 190);
+    leaf = leafArray[64];
+    leaf.position= CGPointMake(230, 156);
+    leaf = leafArray[65];
+    leaf.position= CGPointMake(230, 174);
+    leaf = leafArray[66];
+    leaf.position= CGPointMake(230, 128);
+    leaf = leafArray[67];
+    leaf.position= CGPointMake(250, 142);
+    leaf = leafArray[68];
+    leaf.position= CGPointMake(214, 128);
+    leaf = leafArray[69];
+    leaf.position= CGPointMake(214, 102);
+   
     
-    for (int i = 0; i < 50; i++)
+    leaf = leafArray[70];
+    leaf.position= CGPointMake(190, 96);
+    leaf = leafArray[71];
+    leaf.position= CGPointMake(200, 116);
+    leaf = leafArray[72];
+    leaf.position= CGPointMake(207, 156);
+    leaf = leafArray[73];
+    leaf.position= CGPointMake(186, 147);
+    leaf = leafArray[74];
+    leaf.position= CGPointMake(170, 188);
+
+    leaf = leafArray[75];
+    leaf.position= CGPointMake(154, 198);
+    leaf = leafArray[76];
+    leaf.position= CGPointMake(184, 218);
+
+    leaf = leafArray[77];
+    leaf.position= CGPointMake(174, 240);
+    
+    for (int i = 0; i < 78; i++)
     {
         [self.view.layer addSublayer:leafArray[i]];
     }
     
-    /*
     
     CABasicAnimation *animation = [CABasicAnimation animation];
     animation.keyPath = @"position.y";
     animation.fromValue = @200;
     animation.toValue = @350;
     animation.duration = 2;
+    
     
     [pathLayer addAnimation:animation forKey:@"basic"];
     
