@@ -70,7 +70,7 @@
     
     NSMutableArray *leafArray = [[NSMutableArray alloc]init];
     
-    for (int i = 0; i < 20; i++)
+    for (int i = 0; i < 40; i++)
     {
         
         CAShapeLayer *pathLayerCopies = [NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:pathLayer]];
@@ -78,13 +78,9 @@
     }
     
     
-    //Reference Ones! it takes 17 steps to a circle
+        //DefinitiveOnes
     CAShapeLayer *leaf1 = leafArray[0];
-    leaf1.position= CGPointMake(23, 170);
-    leaf1.fillColor= [[UIColor blueColor] CGColor];
-    
-    
-    //DefinitiveOnes
+    leaf1.position= CGPointMake(33, 180);
     CAShapeLayer *leaf2 = leafArray[1];
     leaf2.position= CGPointMake(80, 168);
     CAShapeLayer *leaf3 = leafArray[2];
@@ -93,42 +89,50 @@
     leaf4.position= CGPointMake(67, 148);
     CAShapeLayer *leaf5 = leafArray[4];
     leaf5.position= CGPointMake(47, 152);
-    // leaf4.fillColor= [[UIColor greenColor] CGColor];
-    
-    
     CAShapeLayer *leaf6 = leafArray[5];
-    leaf6.position= CGPointMake(50, 200);
+    leaf6.position= CGPointMake(85, 142);
     CAShapeLayer *leaf7 = leafArray[6];
-    leaf7.position= CGPointMake(50, 200);
+    leaf7.position= CGPointMake(90, 162);
     CAShapeLayer *leaf8 = leafArray[7];
-    leaf8.position= CGPointMake(50, 200);
+    leaf8.position=  CGPointMake(120, 167);
     CAShapeLayer *leaf9 = leafArray[8];
-    leaf9.position= CGPointMake(50, 200);
+    leaf9.position=CGPointMake(130, 122);
     CAShapeLayer *leaf10 = leafArray[9];
-    leaf10.position= CGPointMake(50, 200);
+    leaf10.position= CGPointMake(105, 132);
     CAShapeLayer *leaf11 = leafArray[10];
-    leaf11.position= CGPointMake(50, 200);
+    leaf11.position= CGPointMake(130, 102);
     CAShapeLayer *leaf12 = leafArray[11];
-    leaf12.position= CGPointMake(50, 200);
+    leaf12.position= CGPointMake(137, 85);
     CAShapeLayer *leaf13 = leafArray[12];
-    leaf13.position= CGPointMake(50, 200);
+    leaf13.position= CGPointMake(117, 89);
     CAShapeLayer *leaf14 = leafArray[13];
-    leaf14.position= CGPointMake(50, 200);
+    leaf14.position= CGPointMake(100, 100);
     CAShapeLayer *leaf15 = leafArray[14];
-    leaf15.position= CGPointMake(50, 200);
+    leaf15.position= CGPointMake(80, 115);
     CAShapeLayer *leaf16 = leafArray[15];
-    leaf16.position= CGPointMake(50, 200);
+    leaf16.position= CGPointMake(193, 173);
     CAShapeLayer *leaf17 = leafArray[16];
-    leaf17.position= CGPointMake(50, 200);
+    leaf17.position= CGPointMake(195, 190);
+      leaf17.fillColor= [[UIColor blueColor] CGColor];
     CAShapeLayer *leaf18 = leafArray[17];
-    leaf18.position= CGPointMake(50, 200);
-    CAShapeLayer *leaf19 = leafArray[18];
-    leaf19.position= CGPointMake(50, 200);
-    CAShapeLayer *leaf20 = leafArray[19];
-    leaf20.position= CGPointMake(50, 200);
-
+    leaf18.position= CGPointMake(177, 170);
     
-    for (int i = 0; i < 20; i++)
+    
+    CAShapeLayer *leaf19 = leafArray[18];
+    leaf19.position= CGPointMake(142, 150);
+    CAShapeLayer *leaf20 = leafArray[19];
+    leaf20.position= CGPointMake(172, 119);
+ 
+    
+    CAShapeLayer *leaf21 = leafArray[20];
+    leaf21.position= CGPointMake(152, 164);
+    
+    CAShapeLayer *leaf22 = leafArray[18];
+    leaf22.position= CGPointMake(142, 150);
+    leaf22.fillColor= [[UIColor greenColor] CGColor];
+    
+    
+    for (int i = 0; i < 40; i++)
     {
         [self.view.layer addSublayer:leafArray[i]];
     }
