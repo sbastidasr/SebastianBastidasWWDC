@@ -60,14 +60,9 @@
     pathLayer.lineWidth = 1;
     pathLayer.fillColor =  [[self imageColors][@"ruby"] CGColor];
    
-    
-    //Position
-    pathLayer.position= CGPointMake(33, 180);
-    pathLayer.transform = CATransform3DMakeScale(0.2, 0.2, 0.2);
 
-    //displaying
-    [self.view.layer addSublayer:pathLayer];
-    
+    //Position
+    pathLayer.transform = CATransform3DMakeScale(0.2, 0.2, 0.2);
     NSMutableArray *leafArray = [[NSMutableArray alloc]init];
     
     for (int i = 0; i < 78; i++)
@@ -245,18 +240,37 @@
     {
         [self.view.layer addSublayer:leafArray[i]];
     }
-    
-    
+    /*
     CABasicAnimation *animation = [CABasicAnimation animation];
     animation.keyPath = @"position.y";
     animation.fromValue = @200;
     animation.toValue = @350;
     animation.duration = 2;
+    */
+    for (int i = 0; i < 78; i++)
+    {
+        leaf = leafArray[i];
+        CABasicAnimation *animation = [CABasicAnimation animation];
+        animation.keyPath = @"position.y";
+        animation.fromValue = [NSNumber numberWithDouble:(leaf.position.y)];
+        animation.toValue = @380;
+        animation.duration = 2;
+        [leaf addAnimation:animation forKey:@"shake"];
+     
+      //  leaf.position = CGPointMake(leaf.position.x , 380);
+        
+    }
+    for (int i = 0; i < 78; i++)
+    {
+        
+        
+        leaf = leafArray[i];
+       leaf.position = CGPointMake(leaf.position.x , 380);
+        
+    }
     
     
-    [pathLayer addAnimation:animation forKey:@"basic"];
-    
-    pathLayer.position = CGPointMake(50, 350);*/
+ 
 }
 @end
 
