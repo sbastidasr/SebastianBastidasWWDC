@@ -251,23 +251,25 @@
     {
         leaf = leafArray[i];
         CABasicAnimation *animation = [CABasicAnimation animation];
-        animation.keyPath = @"position.y";
+        animation.keyPath = @"position";
         animation.fromValue = [NSNumber numberWithDouble:(leaf.position.y)];
         animation.toValue = @380;
-        animation.duration = 2;
+        
+        //Random time value
+        float lowerBound = 1.0;
+        float upperBound = 4.0;
+       float rndValue=lowerBound + ((float)arc4random() / UINT32_MAX) * (upperBound - lowerBound);
+        
+        animation.duration = rndValue;
+        animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+
+        
         [leaf addAnimation:animation forKey:@"shake"];
      
-      //  leaf.position = CGPointMake(leaf.position.x , 380);
-        
-    }
-    for (int i = 0; i < 78; i++)
-    {
-        
-        
-        leaf = leafArray[i];
        leaf.position = CGPointMake(leaf.position.x , 380);
         
     }
+
     
     
  
