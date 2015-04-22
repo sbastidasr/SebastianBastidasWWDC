@@ -92,13 +92,12 @@
 		EA48703D1AE1E31A002A5A3D /* F.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA4870301AE1E31A002A5A3D /* F.mp3 */; };
 		EA48703E1AE1E31A002A5A3D /* G#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA4870311AE1E31A002A5A3D /* G#.mp3 */; };
 		EA48703F1AE1E31A002A5A3D /* G.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA4870321AE1E31A002A5A3D /* G.mp3 */; };
-		EA69D9DC1AE7102D00BE5B9D /* DropItViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA69D9D91AE7102C00BE5B9D /* DropItViewController.m */; };
-		EA69D9DD1AE7102D00BE5B9D /* DropItBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = EA69D9DB1AE7102D00BE5B9D /* DropItBehavior.m */; };
 		EA69D9E31AE7127500BE5B9D /* LeavesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA69D9E21AE7127500BE5B9D /* LeavesViewController.m */; };
 		EA69D9E51AE7141800BE5B9D /* leaf.svg in Resources */ = {isa = PBXBuildFile; fileRef = EA69D9E41AE7141800BE5B9D /* leaf.svg */; };
 		EA69D9E71AE7227C00BE5B9D /* leaf2.svg in Resources */ = {isa = PBXBuildFile; fileRef = EA69D9E61AE7227C00BE5B9D /* leaf2.svg */; };
 		EA69D9E91AE7236200BE5B9D /* leaf3.svg in Resources */ = {isa = PBXBuildFile; fileRef = EA69D9E81AE7236200BE5B9D /* leaf3.svg */; };
 		EA69D9EB1AE723ED00BE5B9D /* leaf4.svg in Resources */ = {isa = PBXBuildFile; fileRef = EA69D9EA1AE723ED00BE5B9D /* leaf4.svg */; };
+		EA69D9EE1AE7EDB700BE5B9D /* IntroPages.m in Sources */ = {isa = PBXBuildFile; fileRef = EA69D9ED1AE7EDB700BE5B9D /* IntroPages.m */; };
 		EA76F5B31AE559E800AAD496 /* house.svg in Resources */ = {isa = PBXBuildFile; fileRef = EA76F5B21AE559E800AAD496 /* house.svg */; };
 		EA76F5F71AE5A8DB00AAD496 /* EraseImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA76F5F61AE5A8DB00AAD496 /* EraseImageView.m */; };
 		EA76F5FA1AE5A9CA00AAD496 /* EraseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA76F5F91AE5A9CA00AAD496 /* EraseViewController.m */; };
@@ -238,16 +237,14 @@
 		EA4870301AE1E31A002A5A3D /* F.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = F.mp3; sourceTree = "<group>"; };
 		EA4870311AE1E31A002A5A3D /* G#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "G#.mp3"; sourceTree = "<group>"; };
 		EA4870321AE1E31A002A5A3D /* G.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = G.mp3; sourceTree = "<group>"; };
-		EA69D9D81AE7102C00BE5B9D /* DropItViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropItViewController.h; sourceTree = "<group>"; };
-		EA69D9D91AE7102C00BE5B9D /* DropItViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropItViewController.m; sourceTree = "<group>"; };
-		EA69D9DA1AE7102C00BE5B9D /* DropItBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropItBehavior.h; sourceTree = "<group>"; };
-		EA69D9DB1AE7102D00BE5B9D /* DropItBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropItBehavior.m; sourceTree = "<group>"; };
 		EA69D9E11AE7127500BE5B9D /* LeavesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeavesViewController.h; sourceTree = "<group>"; };
 		EA69D9E21AE7127500BE5B9D /* LeavesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeavesViewController.m; sourceTree = "<group>"; };
 		EA69D9E41AE7141800BE5B9D /* leaf.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = leaf.svg; sourceTree = "<group>"; };
 		EA69D9E61AE7227C00BE5B9D /* leaf2.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = leaf2.svg; sourceTree = "<group>"; };
 		EA69D9E81AE7236200BE5B9D /* leaf3.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = leaf3.svg; sourceTree = "<group>"; };
 		EA69D9EA1AE723ED00BE5B9D /* leaf4.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = leaf4.svg; sourceTree = "<group>"; };
+		EA69D9EC1AE7EDB700BE5B9D /* IntroPages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroPages.h; sourceTree = "<group>"; };
+		EA69D9ED1AE7EDB700BE5B9D /* IntroPages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroPages.m; sourceTree = "<group>"; };
 		EA76F5B21AE559E800AAD496 /* house.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = house.svg; sourceTree = "<group>"; };
 		EA76F5F51AE5A8DB00AAD496 /* EraseImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EraseImageView.h; sourceTree = "<group>"; };
 		EA76F5F61AE5A8DB00AAD496 /* EraseImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EraseImageView.m; sourceTree = "<group>"; };
@@ -434,11 +431,9 @@
 		EA486FE61AE1D957002A5A3D /* SebastianBastidas */ = {
 			isa = PBXGroup;
 			children = (
+				EA69D9EC1AE7EDB700BE5B9D /* IntroPages.h */,
+				EA69D9ED1AE7EDB700BE5B9D /* IntroPages.m */,
 				EA486FF11AE1D958002A5A3D /* Main.storyboard */,
-				EA69D9D81AE7102C00BE5B9D /* DropItViewController.h */,
-				EA69D9D91AE7102C00BE5B9D /* DropItViewController.m */,
-				EA69D9DA1AE7102C00BE5B9D /* DropItBehavior.h */,
-				EA69D9DB1AE7102D00BE5B9D /* DropItBehavior.m */,
 				EA69D9E11AE7127500BE5B9D /* LeavesViewController.h */,
 				EA69D9E21AE7127500BE5B9D /* LeavesViewController.m */,
 				EA2C1FF51AE6A84100D0DC7B /* Erase */,
@@ -705,7 +700,6 @@
 				EA3A34EC1AE418990042FB88 /* CJSONScanner.m in Sources */,
 				EA3A34F31AE418990042FB88 /* WTMGlyphDetector.m in Sources */,
 				EA3A34E91AE418990042FB88 /* CDataScanner_Extensions.m in Sources */,
-				EA69D9DD1AE7102D00BE5B9D /* DropItBehavior.m in Sources */,
 				EA3A34E41AE418990042FB88 /* CDataScanner.m in Sources */,
 				EA3A34ED1AE418990042FB88 /* CJSONSerializer.m in Sources */,
 				EA3A34B21AE418010042FB88 /* DrawViewController.m in Sources */,
@@ -720,6 +714,7 @@
 				EA3A34E51AE418990042FB88 /* CFilteringJSONSerializer.m in Sources */,
 				EA3A34EA1AE418990042FB88 /* NSDictionary_JSONExtensions.m in Sources */,
 				EA3A34AB1AE40A4A0042FB88 /* SwipeViewController.m in Sources */,
+				EA69D9EE1AE7EDB700BE5B9D /* IntroPages.m in Sources */,
 				EA3A34F51AE418990042FB88 /* WTMGlyphTemplate.m in Sources */,
 				EA3A34F41AE418990042FB88 /* WTMGlyphStroke.m in Sources */,
 				EA3A34F11AE418990042FB88 /* WTMGlyph.m in Sources */,
@@ -730,7 +725,6 @@
 				EA3A34E61AE418990042FB88 /* CJSONDeserializer_BlocksExtensions.m in Sources */,
 				EA3A34B31AE418010042FB88 /* WTMGlyphDetectorView.m in Sources */,
 				EA76F5F71AE5A8DB00AAD496 /* EraseImageView.m in Sources */,
-				EA69D9DC1AE7102D00BE5B9D /* DropItViewController.m in Sources */,
 				EA3A34F61AE418990042FB88 /* WTMGlyphUtilities.m in Sources */,
 				EA3A34E81AE418990042FB88 /* CJSONSerializedData.m in Sources */,
 			);

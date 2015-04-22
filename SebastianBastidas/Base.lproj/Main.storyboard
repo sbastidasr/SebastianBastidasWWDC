@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7Ar-6a-7kH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sJz-tM-mAb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -7,7 +7,7 @@
         <!--Leaves View Controller-->
         <scene sceneID="7dG-FV-5zD">
             <objects>
-                <viewController id="7Ar-6a-7kH" customClass="LeavesViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="5" id="7Ar-6a-7kH" customClass="LeavesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YrV-LB-QtO"/>
                         <viewControllerLayoutGuide type="bottom" id="r3e-5x-RH6"/>
@@ -21,34 +21,34 @@
                                     <rect key="frame" x="22" y="86" width="320" height="425"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="I have experience in" translatesAutoresizingMaskIntoConstraints="NO" id="78o-oo-nLj">
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tree" translatesAutoresizingMaskIntoConstraints="NO" id="g9d-ax-Cs6">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="46" y="64" width="283" height="36"/>
+                                    <rect key="frame" x="22" y="86" width="320" height="425"/>
                                 </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UX" translatesAutoresizingMaskIntoConstraints="NO" id="w1R-Ru-rpK">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="134" y="108" width="106" height="39"/>
+                                    <rect key="frame" x="349" y="81" width="106" height="39"/>
                                 </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shake your iphone! " translatesAutoresizingMaskIntoConstraints="NO" id="7Mo-Cu-Faq">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="69" y="505" width="237" height="112"/>
+                                    <rect key="frame" x="335" y="503" width="237" height="112"/>
                                 </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="&lt;&lt;  or swipe to cont" translatesAutoresizingMaskIntoConstraints="NO" id="gYP-MV-7XN">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="62" y="625" width="250" height="22"/>
+                                    <rect key="frame" x="349" y="608" width="250" height="22"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tree" translatesAutoresizingMaskIntoConstraints="NO" id="g9d-ax-Cs6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="I have experience in" translatesAutoresizingMaskIntoConstraints="NO" id="78o-oo-nLj">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="22" y="86" width="320" height="425"/>
+                                    <rect key="frame" x="349" y="37" width="283" height="36"/>
                                 </variation>
                             </imageView>
                         </subviews>
@@ -57,21 +57,21 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="aWe-nm-92e"/>
-                                <exclude reference="78o-oo-nLj"/>
+                                <exclude reference="g9d-ax-Cs6"/>
                                 <exclude reference="w1R-Ru-rpK"/>
                                 <exclude reference="7Mo-Cu-Faq"/>
                                 <exclude reference="gYP-MV-7XN"/>
-                                <exclude reference="g9d-ax-Cs6"/>
+                                <exclude reference="78o-oo-nLj"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="aWe-nm-92e"/>
-                                <include reference="78o-oo-nLj"/>
+                                <include reference="g9d-ax-Cs6"/>
                                 <include reference="w1R-Ru-rpK"/>
                                 <include reference="7Mo-Cu-Faq"/>
                                 <include reference="gYP-MV-7XN"/>
-                                <include reference="g9d-ax-Cs6"/>
+                                <include reference="78o-oo-nLj"/>
                             </mask>
                         </variation>
                     </view>
@@ -84,7 +84,7 @@
         <!--Piano View Controller-->
         <scene sceneID="yes-xx-R8T">
             <objects>
-                <viewController id="27K-jF-ekG" customClass="PianoViewController" customModule="SebastianBastidas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="4" id="27K-jF-ekG" customClass="PianoViewController" customModule="SebastianBastidas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oO4-FA-C1o"/>
                         <viewControllerLayoutGuide type="bottom" id="guY-DJ-3lb"/>
@@ -335,7 +335,7 @@
         <!--Erase View Controller-->
         <scene sceneID="q8u-lp-CxT">
             <objects>
-                <viewController id="qpd-wQ-p3J" customClass="EraseViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="1" id="qpd-wQ-p3J" customClass="EraseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AJ2-cd-OXW"/>
                         <viewControllerLayoutGuide type="bottom" id="gXw-vN-LVo"/>
@@ -455,7 +455,7 @@
         <!--ruby-->
         <scene sceneID="K1Y-AN-Gib">
             <objects>
-                <viewController title="ruby" id="izB-WC-eTJ" customClass="SwipeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="2" title="ruby" id="izB-WC-eTJ" customClass="SwipeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YwL-PV-fMa"/>
                         <viewControllerLayoutGuide type="bottom" id="4uA-CB-kIP"/>
@@ -619,10 +619,18 @@
             </objects>
             <point key="canvasLocation" x="413.25" y="745"/>
         </scene>
+        <!--Intro Pages-->
+        <scene sceneID="UdD-NI-2bi">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="sJz-tM-mAb" customClass="IntroPages" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="183-0A-hxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1719" y="818"/>
+        </scene>
         <!--house-->
         <scene sceneID="ZMY-7p-33V">
             <objects>
-                <viewController title="house" id="umo-Ih-Ooa" customClass="SwipeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="3" title="house" id="umo-Ih-Ooa" customClass="SwipeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UN6-hc-fVo"/>
                         <viewControllerLayoutGuide type="bottom" id="kEN-2S-u1y"/>
