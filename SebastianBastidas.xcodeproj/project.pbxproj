@@ -106,6 +106,7 @@
 		EA76F6041AE5B0E300AAD496 /* computerWithWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76F6031AE5B0E300AAD496 /* computerWithWhite.png */; };
 		EA76F6061AE5B1B800AAD496 /* color.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76F6051AE5B1B800AAD496 /* color.png */; };
 		EA76F6081AE5B2FA00AAD496 /* colored.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76F6071AE5B2FA00AAD496 /* colored.png */; };
+		EAFFAB0F1AE995C800D8B6E0 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFFAB0E1AE995C800D8B6E0 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -255,6 +256,8 @@
 		EA76F6031AE5B0E300AAD496 /* computerWithWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = computerWithWhite.png; sourceTree = "<group>"; };
 		EA76F6051AE5B1B800AAD496 /* color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color.png; sourceTree = "<group>"; };
 		EA76F6071AE5B2FA00AAD496 /* colored.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colored.png; sourceTree = "<group>"; };
+		EAFFAB0D1AE995C800D8B6E0 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		EAFFAB0E1AE995C800D8B6E0 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -434,6 +437,8 @@
 				EA69D9EC1AE7EDB700BE5B9D /* PagesViewController.h */,
 				EA69D9ED1AE7EDB700BE5B9D /* PagesViewController.m */,
 				EA486FF11AE1D958002A5A3D /* Main.storyboard */,
+				EAFFAB0D1AE995C800D8B6E0 /* DetailViewController.h */,
+				EAFFAB0E1AE995C800D8B6E0 /* DetailViewController.m */,
 				EA2C1FF51AE6A84100D0DC7B /* Erase */,
 				EA4870181AE1DF55002A5A3D /* Piano.swift */,
 				EA69D9E11AE7127500BE5B9D /* LeavesViewController.h */,
@@ -706,6 +711,7 @@
 				EA3A34F21AE418990042FB88 /* WTMGlyphDefaults.m in Sources */,
 				EA76F5FA1AE5A9CA00AAD496 /* EraseViewController.m in Sources */,
 				EA4870191AE1DF55002A5A3D /* Piano.swift in Sources */,
+				EAFFAB0F1AE995C800D8B6E0 /* DetailViewController.m in Sources */,
 				EA2C1FF41AE6A55100D0DC7B /* DismissViewController.m in Sources */,
 				EA486FED1AE1D957002A5A3D /* AppDelegate.m in Sources */,
 				EA0F49421AE540660020B086 /* PocketSVG.m in Sources */,

@@ -441,12 +441,60 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="qpd-wQ-p3J" kind="relationship" relationship="rootViewController" id="PE1-ZK-kIR"/>
+                        <segue destination="6ij-uu-bWf" kind="relationship" relationship="rootViewController" id="gbh-be-f0D"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfp-WB-Qpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1803" y="-169"/>
+            <point key="canvasLocation" x="-2547" y="-201"/>
+        </scene>
+        <!--Swipe View Controller-->
+        <scene sceneID="ZLN-bQ-CyI">
+            <objects>
+                <viewController id="6ij-uu-bWf" customClass="SwipeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eZ2-5E-bac"/>
+                        <viewControllerLayoutGuide type="bottom" id="cIw-RR-X5I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="beN-r0-E9P">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="udt-Cs-5Bk">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Swipe here to contin" translatesAutoresizingMaskIntoConstraints="NO" id="rTc-Qe-wIS">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="64" y="623" width="246" height="24"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="udt-Cs-5Bk"/>
+                                <exclude reference="rTc-Qe-wIS"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="udt-Cs-5Bk"/>
+                                <include reference="rTc-Qe-wIS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="NbW-bu-4gB"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="qpd-wQ-p3J" kind="show" identifier="next" id="xRB-Xv-jVd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UBq-cR-VUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1779" y="-202"/>
         </scene>
         <!--ruby-->
         <scene sceneID="K1Y-AN-Gib">
@@ -569,17 +617,17 @@
                     </view>
                     <toolbarItems/>
                     <connections>
-                        <segue destination="K1g-Qx-Vv0" kind="show" identifier="detail" id="e5g-xy-3ed"/>
+                        <segue destination="EmS-9w-KyC" kind="show" identifier="detail" id="KU6-hd-Ye3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aUn-qQ-XcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-293.25" y="381"/>
         </scene>
-        <!--View Controller-->
+        <!--Pages View Controller-->
         <scene sceneID="EaQ-CF-whI">
             <objects>
-                <viewController id="Tex-nE-BOS" sceneMemberID="viewController">
+                <viewController id="Tex-nE-BOS" customClass="PagesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4S8-uN-B1T"/>
                         <viewControllerLayoutGuide type="bottom" id="xww-qC-4dP"/>
@@ -613,7 +661,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oxh-RE-BkD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="413.25" y="745"/>
+            <point key="canvasLocation" x="1211.25" y="811"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tXg-d2-fS6">
@@ -745,47 +793,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1m-hO-s0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="402.75" y="381"/>
-        </scene>
-        <!--Pages View Controller-->
-        <scene sceneID="I5x-g8-3va">
-            <objects>
-                <viewController id="K1g-Qx-Vv0" customClass="PagesViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NZf-yV-mDy"/>
-                        <viewControllerLayoutGuide type="bottom" id="1VT-tf-NYH"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vqY-Ua-qnd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O00-zw-5qL">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="171" y="260" width="44" height="21"/>
-                                </variation>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="O00-zw-5qL"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="O00-zw-5qL"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="syt-Nk-WQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-314.25" y="1013.5"/>
+            <point key="canvasLocation" x="293.25" y="406"/>
         </scene>
         <!--Swipe View Controller-->
         <scene sceneID="4I1-hn-yNj">
@@ -827,6 +835,44 @@
             </objects>
             <point key="canvasLocation" x="-1014.75" y="309.5"/>
         </scene>
+        <!--Work Information-->
+        <scene sceneID="gkS-kB-lXV">
+            <objects>
+                <viewController title="Work Information" id="EmS-9w-KyC" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yxG-vS-Glf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nsr-pq-E4D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ffq-4C-6KA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Work" translatesAutoresizingMaskIntoConstraints="NO" id="BQK-Qr-MEG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="BQK-Qr-MEG"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="BQK-Qr-MEG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="PRJ-mV-eCn"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yI3-kq-pdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-293.25" y="910.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="&lt;&lt;  or swipe to cont" width="250" height="22"/>
@@ -834,6 +880,7 @@
         <image name="Draw a house! " width="297" height="41"/>
         <image name="Draw a ruby! " width="263" height="52"/>
         <image name="Enjoy a tune! " width="268" height="50"/>
+        <image name="Group" width="375" height="667"/>
         <image name="I got my first MacBo" width="260" height="101"/>
         <image name="I have experience in" width="283" height="36"/>
         <image name="I live in" width="97" height="29"/>
@@ -844,9 +891,11 @@
         <image name="Quito, Ecuador" width="314" height="47"/>
         <image name="RubyDismiss" width="375" height="666"/>
         <image name="Shake your iphone! " width="237" height="112"/>
+        <image name="Swipe here to contin" width="246" height="24"/>
         <image name="Swipe the white area" width="290" height="35"/>
         <image name="UX" width="106" height="39"/>
         <image name="Web Development" width="324" height="41"/>
+        <image name="Work" width="375" height="667"/>
         <image name="black.jpg" width="40" height="140"/>
         <image name="colorDismiss" width="375" height="666"/>
         <image name="house" width="165" height="151"/>

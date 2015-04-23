@@ -24,14 +24,12 @@
     recognizerLeft.direction = UISwipeGestureRecognizerDirectionLeft;
     recognizerLeft.delegate = self;
     [self.view addGestureRecognizer:recognizerLeft];
-
-    [self.navigationController setNavigationBarHidden:YES];
-    
-
     
     
 }
-
+-(void)viewDidAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:YES];
+}
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     if(self.dismissImageView){

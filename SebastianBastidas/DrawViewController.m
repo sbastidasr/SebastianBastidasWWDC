@@ -7,7 +7,7 @@
 //  Copyright (c) 2015 sbastidasr. All rights reserved.
 //
 
-#define GESTURE_SCORE_THRESHOLD         5.0f
+#define GESTURE_SCORE_THRESHOLD         3.0f
 
 #import "DrawViewController.h"
 #import "WTMGlyphDetectorView.h"
