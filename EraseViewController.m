@@ -46,7 +46,7 @@
     EraseImageView* imageView = [[EraseImageView alloc]initWithFrame:newFrame];
     imageView.foregroundImage =  [UIImage imageNamed:@"color.png"];
       imageView.backgroundImage =  [UIImage imageNamed:@"colored.png"];
-    imageView.alpha=0.5f;
+ //   imageView.alpha=0.5f;
     [self.view addSubview:imageView];
     
     

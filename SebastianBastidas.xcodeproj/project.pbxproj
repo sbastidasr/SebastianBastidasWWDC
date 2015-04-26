@@ -105,9 +105,9 @@
 		EA76F6021AE5B09800AAD496 /* colorBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76F6001AE5B09800AAD496 /* colorBackground.png */; };
 		EA76F6041AE5B0E300AAD496 /* computerWithWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76F6031AE5B0E300AAD496 /* computerWithWhite.png */; };
 		EA76F6061AE5B1B800AAD496 /* color.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76F6051AE5B1B800AAD496 /* color.png */; };
-		EA76F6081AE5B2FA00AAD496 /* colored.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76F6071AE5B2FA00AAD496 /* colored.png */; };
 		EAFFAB0F1AE995C800D8B6E0 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFFAB0E1AE995C800D8B6E0 /* DetailViewController.m */; };
 		EAFFAB121AED52D700D8B6E0 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFFAB111AED52D700D8B6E0 /* WebViewController.m */; };
+		EAFFAB141AED6DE800D8B6E0 /* colored.png in Resources */ = {isa = PBXBuildFile; fileRef = EAFFAB131AED6DE800D8B6E0 /* colored.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,11 +256,11 @@
 		EA76F6001AE5B09800AAD496 /* colorBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorBackground.png; sourceTree = "<group>"; };
 		EA76F6031AE5B0E300AAD496 /* computerWithWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = computerWithWhite.png; sourceTree = "<group>"; };
 		EA76F6051AE5B1B800AAD496 /* color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color.png; sourceTree = "<group>"; };
-		EA76F6071AE5B2FA00AAD496 /* colored.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colored.png; sourceTree = "<group>"; };
 		EAFFAB0D1AE995C800D8B6E0 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		EAFFAB0E1AE995C800D8B6E0 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		EAFFAB101AED52D700D8B6E0 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		EAFFAB111AED52D700D8B6E0 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		EAFFAB131AED6DE800D8B6E0 /* colored.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colored.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -513,7 +513,7 @@
 				EA2C1FEE1AE5CECF00D0DC7B /* color-small.png */,
 				EA2C1FEF1AE5CECF00D0DC7B /* colored-small.png */,
 				EA76F6031AE5B0E300AAD496 /* computerWithWhite.png */,
-				EA76F6071AE5B2FA00AAD496 /* colored.png */,
+				EAFFAB131AED6DE800D8B6E0 /* colored.png */,
 				EA76F6051AE5B1B800AAD496 /* color.png */,
 				EA76F6001AE5B09800AAD496 /* colorBackground.png */,
 				EA76F5FC1AE5AAB000AAD496 /* 1.png */,
@@ -627,6 +627,7 @@
 			files = (
 				EA3A35301AE422D80042FB88 /* R.json in Resources */,
 				EA76F5B31AE559E800AAD496 /* house.svg in Resources */,
+				EAFFAB141AED6DE800D8B6E0 /* colored.png in Resources */,
 				EA69D9E71AE7227C00BE5B9D /* leaf2.svg in Resources */,
 				EA3A352F1AE422D80042FB88 /* Q.json in Resources */,
 				EA3A352A1AE422D80042FB88 /* L.json in Resources */,
@@ -636,7 +637,6 @@
 				EA0F494F1AE54ACF0020B086 /* ruby.svg in Resources */,
 				EA3A35271AE422D80042FB88 /* I.json in Resources */,
 				EA3A352B1AE422D80042FB88 /* M.json in Resources */,
-				EA76F6081AE5B2FA00AAD496 /* colored.png in Resources */,
 				EA3A35321AE422D80042FB88 /* square.json in Resources */,
 				EA48703C1AE1E31A002A5A3D /* F#.mp3 in Resources */,
 				EA3A35201AE422D80042FB88 /* C.json in Resources */,
