@@ -460,6 +460,7 @@
                         <viewControllerLayoutGuide type="bottom" id="cIw-RR-X5I"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="beN-r0-E9P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="udt-Cs-5Bk">
@@ -852,6 +853,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bHV-It-Ebo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="w3m-G2-g6N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PurpleBackground" translatesAutoresizingMaskIntoConstraints="NO" id="uAo-5f-hwu">
@@ -902,13 +904,13 @@
         <!--Detail View Controller-->
         <scene sceneID="6Du-fb-7VJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VRN-0W-Fg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Kpu-L8-OIk" customClass="DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QSV-za-zoH"/>
                         <viewControllerLayoutGuide type="bottom" id="30L-sK-5Mh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6YO-tx-tA8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrayBackground Copy" translatesAutoresizingMaskIntoConstraints="NO" id="Plt-29-6KX">
@@ -941,6 +943,7 @@
                     <navigationItem key="navigationItem" id="Zqn-n6-ujJ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VRN-0W-Fg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="320.25" y="983.5"/>
         </scene>
@@ -953,6 +956,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bbr-zT-yCn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Z39-4N-yLw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueBackground" translatesAutoresizingMaskIntoConstraints="NO" id="qH3-gf-9mb">
@@ -979,10 +983,10 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="471" width="316" height="120"/>
+                                    <rect key="frame" x="29" y="462" width="316" height="120"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="yIO-g7-Ndf" kind="show" id="23f-ZF-eEj"/>
+                                    <segue destination="yIO-g7-Ndf" kind="show" identifier="Ukuku" id="23f-ZF-eEj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1017,13 +1021,13 @@
         <!--Detail View Controller-->
         <scene sceneID="F9Y-j3-IMP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="F96-Bt-Qhz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ZuK-Un-FFO" customClass="DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7gs-yh-mJM"/>
                         <viewControllerLayoutGuide type="bottom" id="Crk-pl-oRO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tX7-sy-hPg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YellowBackground" translatesAutoresizingMaskIntoConstraints="NO" id="cLe-8O-DJ0">
@@ -1056,6 +1060,7 @@
                     <navigationItem key="navigationItem" id="m2z-uY-xhj"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F96-Bt-Qhz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="959.25" y="631.5"/>
         </scene>
@@ -1068,9 +1073,10 @@
                         <viewControllerLayoutGuide type="bottom" id="6Nb-qq-o8E"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hos-nF-zdm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RedBackground" translatesAutoresizingMaskIntoConstraints="NO" id="1Q4-cb-74t">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrayBackground Copy" translatesAutoresizingMaskIntoConstraints="NO" id="1Q4-cb-74t">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="-1" y="0.0" width="376" height="668"/>
@@ -1088,6 +1094,51 @@
                                     <rect key="frame" x="60" y="623" width="252" height="24"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xx7-Ro-2ks">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="Twitter: @sbastidasr">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="181" y="329" width="2503" height="3264"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcU-Ue-LYv">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="Twitter: @sbastidasr">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="23" y="274" width="352" height="36"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="yIO-g7-Ndf" kind="show" identifier="twitter" id="Cfp-8K-UJa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPR-Ys-4xd">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="sbastidasr">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="318" width="352" height="36"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="yIO-g7-Ndf" kind="show" identifier="github" id="aDy-QH-qif"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugH-lp-ivt">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="Blog: sbastidasr.com">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="23" y="362" width="352" height="36"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="yIO-g7-Ndf" kind="show" identifier="blog" id="VOG-Lx-Zos"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -1095,6 +1146,10 @@
                                 <exclude reference="1Q4-cb-74t"/>
                                 <exclude reference="SO9-gX-0OH"/>
                                 <exclude reference="veP-W0-aJI"/>
+                                <exclude reference="xx7-Ro-2ks"/>
+                                <exclude reference="dcU-Ue-LYv"/>
+                                <exclude reference="TPR-Ys-4xd"/>
+                                <exclude reference="ugH-lp-ivt"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1102,6 +1157,10 @@
                                 <include reference="1Q4-cb-74t"/>
                                 <include reference="SO9-gX-0OH"/>
                                 <include reference="veP-W0-aJI"/>
+                                <include reference="xx7-Ro-2ks"/>
+                                <include reference="dcU-Ue-LYv"/>
+                                <include reference="TPR-Ys-4xd"/>
+                                <include reference="ugH-lp-ivt"/>
                             </mask>
                         </variation>
                     </view>
@@ -1115,10 +1174,10 @@
             </objects>
             <point key="canvasLocation" x="2486.25" y="-96.5"/>
         </scene>
-        <!--Work Information-->
+        <!--Ukuku-->
         <scene sceneID="cWi-My-NZG">
             <objects>
-                <viewController title="Work Information" id="yIO-g7-Ndf" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController title="Ukuku" id="yIO-g7-Ndf" customClass="WebViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qKb-Qs-rhH"/>
                         <viewControllerLayoutGuide type="bottom" id="moW-YG-hO3"/>
@@ -1126,20 +1185,43 @@
                     <view key="view" contentMode="scaleToFill" id="a4y-7e-BB3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awv-ff-vI6">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </variation>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="awv-ff-vI6"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="awv-ff-vI6"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="alj-uA-Ef0"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="webview" destination="awv-ff-vI6" id="XUB-TJ-x62"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GJl-wC-Hw0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="240.75" y="-1132.5"/>
+            <point key="canvasLocation" x="1421.25" y="-1150.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="2ndScreen" width="375" height="667"/>
         <image name="&lt;&lt;  or swipe to cont" width="250" height="22"/>
         <image name="Awards" width="376" height="668"/>
+        <image name="Blog: sbastidasr.com" width="300" height="36"/>
         <image name="BlueBackground" width="376" height="668"/>
         <image name="Color the world! -1" width="229" height="29"/>
         <image name="Draw a house! " width="297" height="41"/>
@@ -1163,8 +1245,9 @@
         <image name="Swipe here to contin" width="246" height="24"/>
         <image name="SwipeBack" width="252" height="24"/>
         <image name="ThankYou" width="375" height="667"/>
+        <image name="Twitter: @sbastidasr" width="297" height="36"/>
         <image name="UX" width="106" height="39"/>
-        <image name="UkukuButton" width="261" height="120"/>
+        <image name="UkukuButton" width="316" height="120"/>
         <image name="Web Development" width="324" height="41"/>
         <image name="Work" width="375" height="667"/>
         <image name="YellowBackground" width="376" height="668"/>
@@ -1174,6 +1257,7 @@
         <image name="iOS" width="375" height="667"/>
         <image name="possibilities" width="323" height="71"/>
         <image name="ruby" width="190" height="153"/>
+        <image name="sbastidasr" width="278" height="35"/>
         <image name="to view my home!" width="259" height="36"/>
         <image name="to view the story" width="239" height="36"/>
         <image name="treeBranches" width="2448" height="3264"/>
@@ -1181,5 +1265,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ScP-fu-GGP"/>
+        <segue reference="VOG-Lx-Zos"/>
     </inferredMetricsTieBreakers>
 </document>

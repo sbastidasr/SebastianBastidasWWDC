@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "WebViewController.h"
 
 @interface DetailViewController ()
 
@@ -50,6 +51,7 @@
         [self.navigationController popViewControllerAnimated:YES];
     }
 }
+
 
 
 /*

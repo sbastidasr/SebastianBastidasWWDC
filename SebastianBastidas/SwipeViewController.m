@@ -8,6 +8,7 @@
 
 #import "SwipeViewController.h"
 #import "DrawViewController.h"
+#import "WebViewController.h"
 
 @implementation SwipeViewController
 
@@ -68,7 +69,34 @@
     if ([segue.identifier isEqualToString:@"embedSegue"]) {
         [self prepareForMapEmbeddingSegue:segue sender:sender];
     }
+    
+    if ([segue.identifier isEqual:@"Ukuku"])
+    {
+        WebViewController *webView =  [segue destinationViewController];
+        webView.strURL=@"http://sbastidasr.com/post/116583534124/ukuku";
+    }
+    if ([segue.identifier isEqual:@"github"])
+    {
+        WebViewController *webView =  [segue destinationViewController];
+        webView.strURL=@"http://github.com/sbastidasr";
+    }
+    if ([segue.identifier isEqual:@"twitter"])
+    {
+        WebViewController *webView =  [segue destinationViewController];
+        webView.strURL=@"http://twitter.com/sbastidasr";
+    }
+    if ([segue.identifier isEqual:@"blog"])
+    {
+        WebViewController *webView =  [segue destinationViewController];
+        webView.strURL=@"http://sbastidasr.com";
+    }
+    
+
 }
+
+
+
+
 
 - (void)prepareForMapEmbeddingSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     DrawViewController *drawVC = (DrawViewController *)segue.destinationViewController;

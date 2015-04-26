@@ -107,6 +107,7 @@
 		EA76F6061AE5B1B800AAD496 /* color.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76F6051AE5B1B800AAD496 /* color.png */; };
 		EA76F6081AE5B2FA00AAD496 /* colored.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76F6071AE5B2FA00AAD496 /* colored.png */; };
 		EAFFAB0F1AE995C800D8B6E0 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFFAB0E1AE995C800D8B6E0 /* DetailViewController.m */; };
+		EAFFAB121AED52D700D8B6E0 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFFAB111AED52D700D8B6E0 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -258,6 +259,8 @@
 		EA76F6071AE5B2FA00AAD496 /* colored.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colored.png; sourceTree = "<group>"; };
 		EAFFAB0D1AE995C800D8B6E0 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		EAFFAB0E1AE995C800D8B6E0 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		EAFFAB101AED52D700D8B6E0 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		EAFFAB111AED52D700D8B6E0 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -437,6 +440,8 @@
 				EA69D9EC1AE7EDB700BE5B9D /* PagesViewController.h */,
 				EA69D9ED1AE7EDB700BE5B9D /* PagesViewController.m */,
 				EA486FF11AE1D958002A5A3D /* Main.storyboard */,
+				EAFFAB101AED52D700D8B6E0 /* WebViewController.h */,
+				EAFFAB111AED52D700D8B6E0 /* WebViewController.m */,
 				EAFFAB0D1AE995C800D8B6E0 /* DetailViewController.h */,
 				EAFFAB0E1AE995C800D8B6E0 /* DetailViewController.m */,
 				EA2C1FF51AE6A84100D0DC7B /* Erase */,
@@ -725,6 +730,7 @@
 				EA3A34F41AE418990042FB88 /* WTMGlyphStroke.m in Sources */,
 				EA3A34F11AE418990042FB88 /* WTMGlyph.m in Sources */,
 				EA3A34E71AE418990042FB88 /* CJSONSerialization.m in Sources */,
+				EAFFAB121AED52D700D8B6E0 /* WebViewController.m in Sources */,
 				EA3A34EB1AE418990042FB88 /* CJSONDeserializer.m in Sources */,
 				EA4870171AE1DE61002A5A3D /* PianoViewController.swift in Sources */,
 				EA486FEA1AE1D957002A5A3D /* main.m in Sources */,
