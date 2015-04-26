@@ -54,6 +54,17 @@
 {
     if (motion == UIEventSubtypeMotionShake )
     {
+        
+        
+         // Delay execution of my block for 10 seconds.
+         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 4 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+             [self performSegueWithIdentifier:@"detail" sender:self];
+
+             
+             
+         });
+        
+        
         for (int i = 0; i < 78; i++)
         {
             CAShapeLayer *leaf;
@@ -108,6 +119,10 @@
 
 -(void)drawLine
 {
+
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"RedBackground"]];
+
+    
     //creation
     CGPathRef myPath = [PocketSVG pathFromSVGFileNamed:@"leaf4"];
     CAShapeLayer *pathLayer = [CAShapeLayer layer];

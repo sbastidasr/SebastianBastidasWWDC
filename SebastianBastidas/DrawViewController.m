@@ -81,7 +81,7 @@ const CGPoint ruby = {-1.0f, -209.0f};
   //  NSString *glyphNames = [self.gestureDetectorView getGlyphNamesString];
     //if ([glyphNames length] > 0)
         //NSLog(@"Loaded with %@ templates.\n\n", glyphNames);
-    NSLog(@"Last gesture detected: %@\nScore: %.3f", glyph.name, score);
+  //  NSLog(@"Last gesture detected: %@\nScore: %.3f", glyph.name, score);
     
     if ([glyph.name isEqualToString:@"ruby"] || [glyph.name isEqualToString:@"circle"]){
         [self performSegueWithIdentifier:@"detail" sender:self];
