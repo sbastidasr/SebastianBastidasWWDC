@@ -1139,7 +1139,7 @@
     <resources>
         <image name="2ndScreen" width="375" height="667"/>
         <image name="&lt;&lt;  or swipe to cont" width="250" height="22"/>
-        <image name="Awards" width="375" height="667"/>
+        <image name="Awards" width="376" height="668"/>
         <image name="BlueBackground" width="376" height="668"/>
         <image name="Color the world! -1" width="229" height="29"/>
         <image name="Draw a house! " width="297" height="41"/>
