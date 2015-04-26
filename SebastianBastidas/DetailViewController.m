@@ -26,7 +26,8 @@
     recognizerRight.delegate = self;
     [self.view addGestureRecognizer:recognizerRight];
     
-
+     self.title = @"Information";
+    [self.navigationController.navigationBar setAlpha:0.0f];
 }
 
 
