@@ -28,12 +28,6 @@
                                     <rect key="frame" x="134" y="81" width="106" height="39"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shake your iphone! " translatesAutoresizingMaskIntoConstraints="NO" id="7Mo-Cu-Faq">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="69" y="495" width="237" height="112"/>
-                                </variation>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="I have experience in" translatesAutoresizingMaskIntoConstraints="NO" id="78o-oo-nLj">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -46,6 +40,12 @@
                                     <rect key="frame" x="62" y="625" width="250" height="22"/>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shake your iphone! " translatesAutoresizingMaskIntoConstraints="NO" id="7Mo-Cu-Faq">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="69" y="501" width="237" height="102"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -53,18 +53,18 @@
                             <mask key="subviews">
                                 <exclude reference="aWe-nm-92e"/>
                                 <exclude reference="w1R-Ru-rpK"/>
-                                <exclude reference="7Mo-Cu-Faq"/>
                                 <exclude reference="78o-oo-nLj"/>
                                 <exclude reference="gYP-MV-7XN"/>
+                                <exclude reference="7Mo-Cu-Faq"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="aWe-nm-92e"/>
                                 <include reference="w1R-Ru-rpK"/>
-                                <include reference="7Mo-Cu-Faq"/>
                                 <include reference="78o-oo-nLj"/>
                                 <include reference="gYP-MV-7XN"/>
+                                <include reference="7Mo-Cu-Faq"/>
                             </mask>
                         </variation>
                     </view>
@@ -1082,12 +1082,6 @@
                                     <rect key="frame" x="-1" y="0.0" width="376" height="668"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThankYou" translatesAutoresizingMaskIntoConstraints="NO" id="SO9-gX-0OH">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-1" y="1" width="375" height="667"/>
-                                </variation>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwipeBack" translatesAutoresizingMaskIntoConstraints="NO" id="veP-W0-aJI">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -1109,7 +1103,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="23" y="274" width="352" height="36"/>
+                                    <rect key="frame" x="25" y="287" width="352" height="36"/>
                                 </variation>
                                 <connections>
                                     <segue destination="yIO-g7-Ndf" kind="show" identifier="twitter" id="Cfp-8K-UJa"/>
@@ -1121,7 +1115,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="14" y="318" width="352" height="36"/>
+                                    <rect key="frame" x="17" y="331" width="352" height="36"/>
                                 </variation>
                                 <connections>
                                     <segue destination="yIO-g7-Ndf" kind="show" identifier="github" id="aDy-QH-qif"/>
@@ -1133,34 +1127,40 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="23" y="362" width="352" height="36"/>
+                                    <rect key="frame" x="29" y="375" width="352" height="36"/>
                                 </variation>
                                 <connections>
                                     <segue destination="yIO-g7-Ndf" kind="show" identifier="blog" id="VOG-Lx-Zos"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThankYou" translatesAutoresizingMaskIntoConstraints="NO" id="SO9-gX-0OH">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-1" y="1" width="375" height="667"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="1Q4-cb-74t"/>
-                                <exclude reference="SO9-gX-0OH"/>
                                 <exclude reference="veP-W0-aJI"/>
                                 <exclude reference="xx7-Ro-2ks"/>
                                 <exclude reference="dcU-Ue-LYv"/>
                                 <exclude reference="TPR-Ys-4xd"/>
                                 <exclude reference="ugH-lp-ivt"/>
+                                <exclude reference="SO9-gX-0OH"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="1Q4-cb-74t"/>
-                                <include reference="SO9-gX-0OH"/>
                                 <include reference="veP-W0-aJI"/>
                                 <include reference="xx7-Ro-2ks"/>
                                 <include reference="dcU-Ue-LYv"/>
                                 <include reference="TPR-Ys-4xd"/>
                                 <include reference="ugH-lp-ivt"/>
+                                <include reference="SO9-gX-0OH"/>
                             </mask>
                         </variation>
                     </view>
@@ -1172,7 +1172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ot-Ck-lBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2486.25" y="-96.5"/>
+            <point key="canvasLocation" x="2486.25" y="-104.5"/>
         </scene>
         <!--Ukuku-->
         <scene sceneID="cWi-My-NZG">
@@ -1229,19 +1229,19 @@
         <image name="Ecuador" width="375" height="667"/>
         <image name="Enjoy a tune! " width="268" height="50"/>
         <image name="GrayBackground Copy" width="376" height="668"/>
-        <image name="Group" width="375" height="667"/>
+        <image name="Group" width="376" height="667"/>
         <image name="I got my first MacBo" width="260" height="101"/>
         <image name="I have experience in" width="283" height="36"/>
         <image name="I live in" width="97" height="29"/>
         <image name="I love music" width="171" height="29"/>
-        <image name="It al started when " width="247" height="29"/>
+        <image name="It al started when " width="255" height="29"/>
         <image name="My first job was" width="228" height="36"/>
         <image name="Press the keys to" width="243" height="36"/>
         <image name="PurpleBackground" width="376" height="668"/>
         <image name="Quito, Ecuador" width="314" height="47"/>
         <image name="RedBackground" width="376" height="668"/>
         <image name="RubyDismiss" width="376" height="668"/>
-        <image name="Shake your iphone! " width="237" height="112"/>
+        <image name="Shake your iphone! " width="237" height="102"/>
         <image name="Swipe here to contin" width="246" height="24"/>
         <image name="SwipeBack" width="252" height="24"/>
         <image name="ThankYou" width="375" height="667"/>
